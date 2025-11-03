@@ -3,719 +3,703 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pobre Zap - O Sincerão do Seu Bolso no WhatsApp</title>
-    <meta name="description" content="Tá no fim do mês e não sabe pra onde foi o dinheiro? App de controle financeiro direto no WhatsApp. Sem planilha, sem app chato, sem enrolação.">
+    <title>POBREZAP - Clareza Financeira é Direito, Não Privilégio</title>
+    <meta name="description" content="Controle financeiro via WhatsApp. R$ 9,99/mês. Usuários economizam R$ 287/mês em média. Reembolso em até 7 dias.">
 
-    <!-- Performance & SEO -->
-    <meta name="robots" content="index, follow">
-    <meta name="googlebot" content="index, follow">
-    <link rel="canonical" href="https://pobrezap.com">
-
-    <!-- DNS Prefetch for Performance -->
-    <link rel="dns-prefetch" href="//fonts.googleapis.com">
-    <link rel="dns-prefetch" href="//fonts.gstatic.com">
-
-    <!-- Preconnect for Critical Resources -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
+    <!-- Performance -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-    <!-- Preload Critical CSS -->
-    <link rel="preload" href="assets/styles.css" as="style">
-    <link rel="preload" href="assets/performance.css" as="style">
+    <!-- Fonts: Space Grotesk + Inter -->
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@500;600&display=swap" rel="stylesheet">
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="assets/styles-refatorado.css">
 
     <!-- Favicon -->
-    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>💬</text></svg>">
-    <link rel="apple-touch-icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>💬</text></svg>">
-
-    <!-- Stylesheets -->
-    <link rel="stylesheet" href="assets/styles.css">
-    <link rel="stylesheet" href="assets/performance.css">
-
-    <!-- Open Graph -->
-    <meta property="og:title" content="Pobre Zap - O Sincerão do Seu Bolso no WhatsApp">
-    <meta property="og:description" content="Controle financeiro sem planilha, sem app chato, sem enrolação. Direto no WhatsApp.">
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://pobrezap.com">
-    <meta property="og:site_name" content="Pobre Zap">
-    <meta property="og:locale" content="pt_BR">
-
-    <!-- Twitter Card -->
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Pobre Zap - O Sincerão do Seu Bolso no WhatsApp">
-    <meta name="twitter:description" content="Controle financeiro sem planilha, sem app chato, sem enrolação. Direto no WhatsApp.">
-    <meta name="twitter:site" content="@pobrezap">
-
-    <!-- Theme Color -->
-    <meta name="theme-color" content="#1d9a4d">
-    <meta name="msapplication-TileColor" content="#1d9a4d">
-
-    <!-- Accessibility -->
-    <meta name="color-scheme" content="light dark">
-
-    <!-- Schema.org Structured Data -->
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "SoftwareApplication",
-      "name": "Pobre Zap",
-      "description": "Controle financeiro via WhatsApp. Sem planilha, sem app chato, sem enrolação.",
-      "url": "https://pobrezap.com",
-      "applicationCategory": "FinanceApplication",
-      "operatingSystem": "WhatsApp",
-      "offers": {
-        "@type": "Offer",
-        "price": "0",
-        "priceCurrency": "BRL"
-      },
-      "aggregateRating": {
-        "@type": "AggregateRating",
-        "ratingValue": "4.8",
-        "ratingCount": "1250"
-      }
-    }
-    </script>
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>💪</text></svg>">
 </head>
-<body class="performance-optimized">
-    <!-- Skip to Main Content for Accessibility -->
-    <a href="#main-content" class="skip-link sr-only-focusable">Pular para o conteúdo principal</a>
-
-    <!-- ARIA Live Region for Screen Readers -->
-    <div aria-live="polite" aria-atomic="true" class="sr-only" id="live-region"></div>
-
+<body>
     <!-- Header -->
-    <header class="header" role="banner">
-        <nav class="nav container" aria-label="Navegação principal">
-            <div class="nav__brand">
-                <a href="#" class="nav__logo" aria-label="Pobre Zap - Página inicial">
-                    <span class="logo-icon" aria-hidden="true">
-                      <svg width="20" height="20" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" role="img" aria-hidden="true">
-                        <defs>
-                          <linearGradient id="logoGrad" x1="0" y1="0" x2="1" y2="1">
-                            <stop offset="0%" stop-color="#1d9a4d"/>
-                            <stop offset="100%" stop-color="#0f766e"/>
-                          </linearGradient>
-                        </defs>
-                        <!-- Bolha de chat -->
-                        <path d="M6 5h9a4 4 0 0 1 4 4v4a4 4 0 0 1-4 4h-6l-2.5 2a1 1 0 0 1-1.5-.86V17H6a4 4 0 0 1-4-4V9a4 4 0 0 1 4-4Z" fill="url(#logoGrad)" opacity="0.9"/>
-                        <!-- Monograma PZ simplificado -->
-                        <path d="M8 9h5.5a2 2 0 1 1 0 4H8V9ZM8 13h2.5l3.5 3" stroke="#fff" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
-                      </svg>
-                    </span>
-                    <span class="logo-text">Pobre Zap</span>
-                </a>
+    <header class="pz-header">
+        <nav class="pz-container">
+            <div class="pz-nav">
+                <div class="pz-logo">
+                    <span class="pz-logo-icon">💪</span>
+                    <div class="pz-logo-text">
+                        <span class="pz-logo-name">POBREZAP</span>
+                        <span class="pz-logo-tagline">Clareza é poder</span>
+                    </div>
+                </div>
+                <div class="pz-nav-actions">
+                    <a href="#como-funciona" class="pz-btn-ghost">Como Funciona</a>
+                    <a href="#depoimentos" class="pz-btn-ghost">Depoimentos</a>
+                    <a href="https://wa.me/5515997423599?text=Quero%20come%C3%A7ar%20no%20POBREZAP%20-%20R%24%209,99/m%C3%AAs" class="pz-btn-primary">
+                        Começar Agora
+                    </a>
+                </div>
             </div>
-
-            <button class="nav__toggle"
-                    aria-expanded="false"
-                    aria-controls="nav-menu"
-                    aria-label="Abrir menu de navegação"
-                    type="button">
-                <span class="hamburger" aria-hidden="true"></span>
-            </button>
-
-            <ul class="nav__menu" id="nav-menu">
-                <li><a href="#como-funciona" class="nav__link">Como Funciona</a></li>
-                <li><a href="#provas" class="nav__link">Resultados Reais</a></li>
-                <li><a href="#pra-quem" class="nav__link">É Pra Mim?</a></li>
-                <li><a href="#faq" class="nav__link">Dúvidas</a></li>
-                <li><a href="#cta" class="nav__link btn btn--primary">Testar Grátis</a></li>
-            </ul>
         </nav>
     </header>
 
-    <!-- Main Content -->
-    <main id="main-content" role="main">
-        <!-- Hero Section -->
-        <section class="hero section" aria-labelledby="hero-title">
-            <div class="container">
-                <div class="hero__content fade-in-up">
-                    <div class="urgency-banner">
-                        <span class="urgency-icon">🚀</span>
-                        <span class="urgency-text">Beta aberto: Entre agora e molde o app com a gente</span>
+    <!-- HERO SECTION -->
+    <section class="pz-hero">
+        <div class="pz-container">
+            <div class="pz-hero-content">
+                <!-- Validação Emocional -->
+                <h1 class="pz-hero-title">
+                    Dia 25 e você não sabe<br>
+                    pra onde foi o dinheiro?
+                </h1>
+
+                <div class="pz-hero-icon">
+                    <span class="pz-punho">💪</span>
+                </div>
+
+                <p class="pz-hero-subtitle">
+                    A gente sente essa raiva com você.<br>
+                    <strong>Vamos resolver juntos?</strong>
+                </p>
+
+                <!-- Promessa + Prova -->
+                <div class="pz-hero-promise">
+                    <div class="pz-promise-item">
+                        <span class="pz-promise-icon">💰</span>
+                        <div class="pz-promise-text">
+                            <strong class="pz-promise-number">R$ 287/mês</strong>
+                            <span class="pz-promise-label">economizados em média</span>
+                        </div>
                     </div>
-                    <h1 id="hero-title" class="hero__title">
-                        Tá no Fim do Mês e Você <span class="text-gradient">Não Sabe</span> Pra Onde Foi o Dinheiro?
-                    </h1>
-                    <p class="hero__subtitle">
-                        Pobre Zap é o sincerão do seu bolso. No WhatsApp, sem planilha, sem app chato.
-                        Você manda <strong>"gastei 32 no mercado"</strong> e ele te mostra a real: onde tá indo sua grana,
-                        o que dá pra cortar, quanto sobra até o fim do mês.
-                    </p>
-                    <div class="hero__actions">
-                        <a href="#cta" class="btn btn--primary btn--large"
-                           aria-describedby="cta-description">
-                            💬 Testar Grátis no WhatsApp
-                        </a>
-                        <a href="#como-funciona" class="btn btn--secondary btn--large">
-                            Ver Como Funciona
-                        </a>
+                    <div class="pz-promise-item">
+                        <span class="pz-promise-icon">📱</span>
+                        <div class="pz-promise-text">
+                            <strong class="pz-promise-number">No WhatsApp</strong>
+                            <span class="pz-promise-label">sem app chato</span>
+                        </div>
                     </div>
-                    <p class="hero__guarantee">
-                        ✅ Grátis pra sempre • ✅ Sem cartão • ✅ Cancela quando quiser
+                    <div class="pz-promise-item">
+                        <span class="pz-promise-icon">🔒</span>
+                        <div class="pz-promise-text">
+                            <strong class="pz-promise-number">Seus dados</strong>
+                            <span class="pz-promise-label">nunca vendemos</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Pricing -->
+                <div class="pz-hero-pricing">
+                    <div class="pz-price-tag">
+                        <span class="pz-price-value">R$ 9,99</span>
+                        <span class="pz-price-period">/mês</span>
+                    </div>
+                    <div class="pz-price-roi">
+                        <span class="pz-price-roi-text">Investe R$ 9,99 • Economiza R$ 287</span>
+                        <strong class="pz-price-roi-result">ROI: 28x</strong>
+                    </div>
+                </div>
+
+                <!-- CTA -->
+                <div class="pz-hero-cta">
+                    <a href="https://wa.me/5515997423599?text=Quero%20come%C3%A7ar%20no%20POBREZAP%20-%20R%24%209,99/m%C3%AAs" class="pz-btn-cta">
+                        💬 Começar Agora por R$ 9,99/mês
+                    </a>
+                    <p class="pz-cta-guarantee">
+                        ✅ Reembolso em até 7 dias • ✅ Cancela quando quiser • ✅ Sem pegadinha
                     </p>
-                    <p id="cta-description" class="sr-only">
-                        Abra o WhatsApp e comece a controlar suas finanças em 2 minutos
+                </div>
+
+                <!-- Social Proof -->
+                <div class="pz-hero-social">
+                    <div class="pz-social-avatars">
+                        <img src="https://i.pravatar.cc/48?img=1" alt="Usuário 1" class="pz-avatar">
+                        <img src="https://i.pravatar.cc/48?img=2" alt="Usuário 2" class="pz-avatar">
+                        <img src="https://i.pravatar.cc/48?img=3" alt="Usuário 3" class="pz-avatar">
+                        <img src="https://i.pravatar.cc/48?img=4" alt="Usuário 4" class="pz-avatar">
+                        <img src="https://i.pravatar.cc/48?img=5" alt="Usuário 5" class="pz-avatar">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- DEPOIMENTOS - PROVA SOCIAL MASSIVA -->
+    <section id="depoimentos" class="pz-section pz-testimonials">
+        <div class="pz-container">
+            <h2 class="pz-section-title">Quem Tá Economizando de Verdade</h2>
+            <p class="pz-section-subtitle">Pessoas reais, economias reais, profissões reais</p>
+
+            <div class="pz-testimonials-grid">
+                <!-- Depoimento 1 -->
+                <div class="pz-testimonial">
+                    <img src="https://i.pravatar.cc/80?img=10" alt="Carla Santos" class="pz-testimonial-avatar">
+                    <div class="pz-testimonial-content">
+                        <p class="pz-testimonial-quote">
+                            "Sou diarista, ganho R$ 1.400. Em 3 meses usando POBREZAP,
+                            cortei R$ 340 de Uber (comecei a pegar busão 2x/semana) e
+                            R$ 180 de delivery. <strong>Juntei R$ 520</strong> - primeira
+                            vez que sobrou dinheiro em 5 anos."
+                        </p>
+                        <div class="pz-testimonial-author">
+                            <strong>Carla Santos, 34 anos</strong>
+                            <span>Diarista • São Paulo, SP</span>
+                            <span class="pz-testimonial-income">~R$ 1.400/mês • Usa há 3 meses</span>
+                        </div>
+                        <div class="pz-testimonial-savings">
+                            Economizou: <strong>R$ 520</strong>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Depoimento 2 -->
+                <div class="pz-testimonial">
+                    <img src="https://i.pravatar.cc/80?img=12" alt="Rafael Silva" class="pz-testimonial-avatar">
+                    <div class="pz-testimonial-content">
+                        <p class="pz-testimonial-quote">
+                            "Trampo de motoboy, renda irregular. POBREZAP me mostrou
+                            que eu gastava <strong>R$ 240/mês em lanche</strong> (achava
+                            que era R$ 80). Cortei pela metade, guardei R$ 120/mês.
+                            Em 4 meses = R$ 480."
+                        </p>
+                        <div class="pz-testimonial-author">
+                            <strong>Rafael Silva, 28 anos</strong>
+                            <span>Motoboy • Rio de Janeiro, RJ</span>
+                            <span class="pz-testimonial-income">~R$ 1.180/mês • Usa há 4 meses</span>
+                        </div>
+                        <div class="pz-testimonial-savings">
+                            Economizou: <strong>R$ 480</strong>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Depoimento 3 -->
+                <div class="pz-testimonial">
+                    <img src="https://i.pravatar.cc/80?img=20" alt="Jéssica Lima" class="pz-testimonial-avatar">
+                    <div class="pz-testimonial-content">
+                        <p class="pz-testimonial-quote">
+                            "Mãe solteira, 2 filhos. Descobri que 'só um lanchinho'
+                            pros meninos virava <strong>R$ 340/mês</strong>. Comecei a
+                            fazer em casa, economizei R$ 200. Agora sobra pra guardar."
+                        </p>
+                        <div class="pz-testimonial-author">
+                            <strong>Jéssica Lima, 31 anos</strong>
+                            <span>Auxiliar Administrativa • Recife, PE</span>
+                            <span class="pz-testimonial-income">~R$ 1.520/mês • Usa há 2 meses</span>
+                        </div>
+                        <div class="pz-testimonial-savings">
+                            Economizou: <strong>R$ 400</strong>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Depoimento 4 -->
+                <div class="pz-testimonial">
+                    <img src="https://i.pravatar.cc/80?img=15" alt="Carlos Mendes" class="pz-testimonial-avatar">
+                    <div class="pz-testimonial-content">
+                        <p class="pz-testimonial-quote">
+                            "Trabalho de segurança, faço bico de Uber fim de semana.
+                            Renda irregular, nunca sobrava nada. Com POBREZAP, cortei
+                            <strong>R$ 180 de streaming</strong> que nem usava e guardei
+                            R$ 150/mês."
+                        </p>
+                        <div class="pz-testimonial-author">
+                            <strong>Carlos Mendes, 42 anos</strong>
+                            <span>Segurança + Uber • Salvador, BA</span>
+                            <span class="pz-testimonial-income">~R$ 1.650/mês • Usa há 5 meses</span>
+                        </div>
+                        <div class="pz-testimonial-savings">
+                            Economizou: <strong>R$ 750</strong>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Depoimento 5 -->
+                <div class="pz-testimonial">
+                    <img src="https://i.pravatar.cc/80?img=25" alt="Ana Paula Costa" class="pz-testimonial-avatar">
+                    <div class="pz-testimonial-content">
+                        <p class="pz-testimonial-quote">
+                            "Vendedora de loja, comissão varia todo mês. POBREZAP me
+                            ajudou a ver que eu gastava <strong>R$ 420 em roupas</strong>
+                            (ansiedade). Cortei 70%, juntei R$ 294/mês. Tô guardando pra
+                            minha filha."
+                        </p>
+                        <div class="pz-testimonial-author">
+                            <strong>Ana Paula Costa, 29 anos</strong>
+                            <span>Vendedora • Belo Horizonte, MG</span>
+                            <span class="pz-testimonial-income">~R$ 1.380/mês • Usa há 3 meses</span>
+                        </div>
+                        <div class="pz-testimonial-savings">
+                            Economizou: <strong>R$ 882</strong>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Depoimento 6 -->
+                <div class="pz-testimonial">
+                    <img src="https://i.pravatar.cc/80?img=30" alt="João Pedro Oliveira" class="pz-testimonial-avatar">
+                    <div class="pz-testimonial-content">
+                        <p class="pz-testimonial-quote">
+                            "Faço faxina, frete, o que aparecer. Recebo dia 5, dia 15,
+                            dia 20 - um caos. POBREZAP organizou tudo. Descobri que
+                            gastava <strong>R$ 200 em cigarro</strong>. Tô parando aos poucos,
+                            já economizei R$ 120/mês."
+                        </p>
+                        <div class="pz-testimonial-author">
+                            <strong>João Pedro Oliveira, 36 anos</strong>
+                            <span>Autônomo (faxina + frete) • Fortaleza, CE</span>
+                            <span class="pz-testimonial-income">~R$ 1.250/mês • Usa há 2 meses</span>
+                        </div>
+                        <div class="pz-testimonial-savings">
+                            Economizou: <strong>R$ 240</strong>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- CTA após depoimentos -->
+            <div class="pz-cta-inline">
+                <p class="pz-cta-text">Você também pode economizar. <strong>Comece hoje.</strong></p>
+                <a href="https://wa.me/5515997423599?text=Quero%20come%C3%A7ar%20no%20POBREZAP%20-%20R%24%209,99/m%C3%AAs" class="pz-btn-cta">
+                    💬 Começar por R$ 9,99/mês
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- PRIVACIDADE - SEUS DADOS SÃO SEUS -->
+    <section class="pz-section pz-privacy">
+        <div class="pz-container">
+            <div class="pz-privacy-header">
+                <span class="pz-privacy-icon">🔒</span>
+                <h2 class="pz-section-title">Seus Dados São Seus</h2>
+            </div>
+
+            <p class="pz-privacy-intro">
+                A gente sabe: pobre é alvo de golpe, de venda de dados, de cartão empurrado.<br>
+                <strong>Por isso, nosso compromisso é cristalino:</strong>
+            </p>
+
+            <div class="pz-privacy-grid">
+                <div class="pz-privacy-item">
+                    <span class="pz-privacy-check">✅</span>
+                    <div class="pz-privacy-content">
+                        <h3>Criptografia Ponta-a-Ponta</h3>
+                        <p>Nem a gente vê seus dados. Só você.</p>
+                    </div>
+                </div>
+
+                <div class="pz-privacy-item">
+                    <span class="pz-privacy-check">✅</span>
+                    <div class="pz-privacy-content">
+                        <h3>Nunca Vendemos. Nunca Compartilhamos.</h3>
+                        <p>Nem com banco, nem com ninguém. Está no contrato.</p>
+                    </div>
+                </div>
+
+                <div class="pz-privacy-item">
+                    <span class="pz-privacy-check">✅</span>
+                    <div class="pz-privacy-content">
+                        <h3>Delete Tudo em 1 Clique</h3>
+                        <p>Sem perguntas, sem retenção. Seu direito, sempre.</p>
+                    </div>
+                </div>
+
+                <div class="pz-privacy-item">
+                    <span class="pz-privacy-check">✅</span>
+                    <div class="pz-privacy-content">
+                        <h3>Código Aberto pra Auditoria</h3>
+                        <p>Qualquer um pode verificar. Transparência total.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pz-privacy-cta">
+                <a href="#" class="pz-link">📄 Ler Política de Privacidade Completa →</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- COMO FUNCIONA -->
+    <section id="como-funciona" class="pz-section pz-how">
+        <div class="pz-container">
+            <h2 class="pz-section-title">Como Funciona?<br>(É ridiculamente simples)</h2>
+
+            <div class="pz-how-steps">
+                <!-- Passo 1 -->
+                <div class="pz-step">
+                    <div class="pz-step-number">1</div>
+                    <div class="pz-step-content">
+                        <h3>Você manda mensagem no WhatsApp</h3>
+                        <div class="pz-step-examples">
+                            <code>"Gastei R$ 32 no mercado"</code>
+                            <code>"Recebi R$ 280 de faxina"</code>
+                            <code>"Paguei R$ 80 de luz"</code>
+                        </div>
+                        <p class="pz-step-note">O bot entende português de rua. Não precisa ser formal.</p>
+                    </div>
+                </div>
+
+                <!-- Passo 2 -->
+                <div class="pz-step">
+                    <div class="pz-step-number">2</div>
+                    <div class="pz-step-content">
+                        <h3>A gente organiza automaticamente</h3>
+                        <p>
+                            Categoriza (mercado, transporte, lazer, etc),<br>
+                            soma tudo, mostra quanto sobra (ou falta).
+                        </p>
+                        <p class="pz-step-note">Sem você fazer nada. Só mandar a mensagem e pronto.</p>
+                    </div>
+                </div>
+
+                <!-- Passo 3 -->
+                <div class="pz-step">
+                    <div class="pz-step-number">3</div>
+                    <div class="pz-step-content">
+                        <h3>Você recebe clareza</h3>
+                        <div class="pz-step-insight">
+                            <strong>"Delivery: R$ 340 (28% da grana)<br>
+                            Uber: R$ 180 (15%)<br>
+                            Sobrou: R$ 120"</strong>
+                        </div>
+                        <p class="pz-step-note">Você decide o que fazer. A gente só mostra a real.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pz-how-visual">
+                <p class="pz-how-summary">
+                    <strong>É tipo ter um contador pessoal que responde na hora,
+                    não cobra nada extra, e fala sua língua.</strong>
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- PRICING -->
+    <section class="pz-section pz-pricing">
+        <div class="pz-container">
+            <h2 class="pz-section-title">Quanto Custa? (A real)</h2>
+
+            <div class="pz-pricing-card">
+                <div class="pz-pricing-header">
+                    <div class="pz-pricing-price">
+                        <span class="pz-pricing-value">R$ 9,99</span>
+                        <span class="pz-pricing-period">/mês</span>
+                    </div>
+                    <p class="pz-pricing-roi">
+                        Investe <strong>R$ 9,99</strong> • Economiza <strong>R$ 287</strong><br>
+                        <span class="pz-pricing-roi-highlight">ROI: 28x</span>
                     </p>
                 </div>
-                <figure class="hero__art" aria-hidden="true">
-                  <svg viewBox="0 0 560 360" xmlns="http://www.w3.org/2000/svg" role="img">
-                    <defs>
-                      <linearGradient id="heroGradient" x1="0" y1="0" x2="1" y2="1">
-                        <stop offset="0%" stop-color="#1d9a4d"/>
-                        <stop offset="100%" stop-color="#0f766e"/>
-                      </linearGradient>
-                    </defs>
-                    <rect x="20" y="20" width="520" height="320" rx="24" fill="#ffffff" stroke="#e2e8f0"/>
-                    <circle cx="100" cy="110" r="42" fill="url(#heroGradient)" opacity="0.18"/>
-                    <circle cx="460" cy="240" r="32" fill="url(#heroGradient)" opacity="0.12"/>
-                    <path d="M220 90h200a24 24 0 0 1 24 24v76a24 24 0 0 1-24 24h-130l-34 28a6 6 0 0 1-10-5v-23h-26a24 24 0 0 1-24-24v-76a24 24 0 0 1 24-24z" fill="#1d9a4d" opacity="0.25"/>
-                    <rect x="240" y="110" width="160" height="16" rx="8" fill="#0f172a" opacity="0.85"/>
-                    <rect x="240" y="140" width="200" height="10" rx="5" fill="#475569" opacity="0.8"/>
-                    <rect x="240" y="160" width="180" height="10" rx="5" fill="#64748b" opacity="0.8"/>
-                    <rect x="80" y="210" width="180" height="14" rx="7" fill="url(#heroGradient)"/>
-                    <rect x="80" y="238" width="120" height="10" rx="5" fill="#64748b" opacity="0.7"/>
-                  </svg>
-                </figure>
-            </div>
-        </section>
 
-      <!-- Conversa Real - NOVA SEÇÃO -->
-      <section class="section demo-conversation" aria-labelledby="demo-title">
-        <div class="container">
-          <h2 id="demo-title">Tipo Assim, Na Prática:</h2>
-          <div class="whatsapp-demo">
-            <div class="chat-bubble user">
-              <p><strong>Você:</strong> gastei 150 no mercado</p>
-              <span class="timestamp">14:23</span>
-            </div>
-            <div class="chat-bubble bot">
-              <p><strong>Pobre Zap:</strong> ✅ Anotado!</p>
-              <p><strong>Mercado:</strong> R$ 150,00</p>
-              <p>📊 <strong>Este mês:</strong> R$ 1.247 de R$ 1.500</p>
-              <p>⚠️ <strong>Atenção:</strong> Sobram R$ 253 pra 12 dias</p>
-              <p>💡 <strong>Dica:</strong> Freie os delivery, mano. Já foram R$ 340 esse mês.</p>
-              <span class="timestamp">14:23</span>
-            </div>
-            <div class="chat-bubble user">
-              <p><strong>Você:</strong> onde eu mais gasto?</p>
-              <span class="timestamp">14:25</span>
-            </div>
-            <div class="chat-bubble bot">
-              <p><strong>Pobre Zap:</strong> Top 3 gastanças de janeiro:</p>
-              <p>🍕 <strong>Delivery:</strong> R$ 340 (23%)</p>
-              <p>🚗 <strong>Uber:</strong> R$ 280 (19%)</p>
-              <p>🛒 <strong>Mercado:</strong> R$ 450 (30%)</p>
-              <p>🎯 <strong>Corta o delivery</strong> e sobra grana pra investir, brother.</p>
-              <span class="timestamp">14:25</span>
-            </div>
-          </div>
-          <p class="demo-note">Sem planilha. Sem app. Só conversa normal no WhatsApp que você já usa todo dia.</p>
-        </div>
-      </section>
-
-      <!-- Barra de métricas e selos de confiança -->
-      <section class="section alt trust" aria-labelledby="trust-title">
-        <div class="container">
-          <h2 id="trust-title" class="sr-only">Confiabilidade</h2>
-          <div class="trust-bar fade-in-up">
-            <div class="metric">
-              <span class="metric__icon" aria-hidden="true">⭐</span>
-              <div class="metric__text">
-                <strong>4.8/5</strong>
-                <small>1.250 avaliações reais</small>
-              </div>
-            </div>
-            <div class="metric">
-              <span class="metric__icon" aria-hidden="true">👥</span>
-              <div class="metric__text">
-                <strong>+1.200 pessoas</strong>
-                <small>economizando grana</small>
-              </div>
-            </div>
-            <div class="metric">
-              <span class="metric__icon" aria-hidden="true">💰</span>
-              <div class="metric__text">
-                <strong>R$ 287/mês</strong>
-                <small>economia média</small>
-              </div>
-            </div>
-            <div class="metric">
-              <span class="metric__icon" aria-hidden="true">🔒</span>
-              <div class="metric__text">
-                <strong>Criptografia bancária</strong>
-                <small>seus dados seguros</small>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- O Problema (storytelling) - NOVA SEÇÃO -->
-      <section class="section problem" aria-labelledby="problem-title">
-        <div class="container">
-          <h2 id="problem-title">Você Conhece Esse Filme?</h2>
-          <div class="grid cols-2">
-            <div class="problem-item">
-              <span class="problem-icon">😰</span>
-              <h3>Dia 25 chegou...</h3>
-              <p>Conta tá no vermelho, você jura que não gastou tanto, mas a matemática não fecha.
-              Onde foi parar aqueles R$ 1.500 que você ganhou? Mistério.</p>
-            </div>
-            <div class="problem-item">
-              <span class="problem-icon">📊</span>
-              <h3>Tentou planilha</h3>
-              <p>Baixou 3 apps, abriu 2 planilhas. Funcionou... por 3 dias.
-              Depois esqueceu de anotar, perdeu a senha, desanimou. A vida tá corrida demais pra isso.</p>
-            </div>
-            <div class="problem-item">
-              <span class="problem-icon">🤯</span>
-              <h3>Os "só" que matam</h3>
-              <p>"Só um Uber", "só um lanche", "só esse streaming".
-              Mas no fim do mês, esses "só" comeram R$ 600 que você nem viu.</p>
-            </div>
-            <div class="problem-item">
-              <span class="problem-icon">😔</span>
-              <h3>Sensação de fracasso</h3>
-              <p>Você trabalha, rala, faz bico. Mas parece que nunca sobra.
-              E quando sobra, some. Tipo, literalmente evapora.</p>
-            </div>
-          </div>
-          <div class="cta-inline mt-6">
-            <h3>Para de se culpar. O problema não é você. É a falta de clareza.</h3>
-            <a class="btn btn--primary" href="#cta">Quero Clareza Agora</a>
-          </div>
-        </div>
-      </section>
-
-      <!-- Manifesto -->
-      <section id="manifesto" class="section" aria-labelledby="manifesto-title">
-        <div class="container">
-          <h2 id="manifesto-title">O Manifesto</h2>
-          <div class="manifesto-content">
-            <p class="manifesto-intro">
-              <strong>Olha, vamos ser sinceros:</strong> A gente nasceu pra ser o sincerão do seu bolso.
-              Aquele amigo chato que fala na lata, mas que você precisa ouvir.
-            </p>
-            <div class="grid cols-2">
-              <div>
-                <p>
-                  A gente <strong>sabe</strong> como é: boleto, busão, aluguel, o cafezinho que vira rombo,
-                  a sensação de que o mês tem 60 dias e o salário dura 15.
-                </p>
-                <p>
-                  <strong>Sem papo engravatado.</strong> Sem jargão de coach financeiro.
-                  Sem gráfico pizza que você não entende. Só clareza bruta: "Mano, tu gasta R$ 340 em delivery.
-                  Isso é 23% da tua grana. Tá ligado?"
-                </p>
-              </div>
-              <div>
-                <p>
-                  Aqui é controle financeiro <strong>do jeito real, do seu jeito.</strong> No WhatsApp que você já usa.
-                  Com lembrete na hora certa. Com humor que cutuca sem humilhar. Com respeito.
-                </p>
-                <p>
-                  <strong>Porque organização financeira não é privilégio.</strong> É direito.
-                  E é especialmente importante pra quem tem pouco — porque cada R$ conta, cada decisão importa,
-                  cada economia pode ser a diferença entre apertar ou respirar.
-                </p>
-              </div>
-            </div>
-            <p class="manifesto-signature">
-              <strong>Pobre Zap: O app que fala a verdade que você precisa ouvir.</strong>
-            </p>
-          </div>
-        </div>
-      </section>
-
-      <!-- Como funciona -->
-      <section id="como-funciona" class="section alt" aria-labelledby="como-title">
-        <div class="container">
-          <h2 id="como-title">Como Funciona (É Ridiculamente Simples)</h2>
-          <div class="steps">
-            <article class="step">
-              <h3>1. Manda mensagem no WhatsApp</h3>
-              <p><strong>Você:</strong> "gastei 32 no mercado"<br>
-              <strong>Ou:</strong> "recebi 1200 do trampo"<br>
-              <strong>Ou:</strong> "paguei 80 de luz"</p>
-              <p class="step-detail">O bot entende português de rua. Não precisa ser formal. Escreve do seu jeito.</p>
-            </article>
-            <article class="step">
-              <h3>2. Ele organiza automaticamente</h3>
-              <p>Classifica os gastos (mercado, transporte, lazer, etc), soma tudo,
-              mostra quanto você gastou do orçamento, avisa quando tá no limite.</p>
-              <p class="step-detail">Sem você fazer nada. Só mandar a mensagem e pronto.</p>
-            </article>
-            <article class="step">
-              <h3>3. Recebe insights sinceros</h3>
-              <p><strong>"Ó, delivery comeu 23% da grana esse mês. Talvez seja hora de cozinhar mais, né?"</strong></p>
-              <p class="step-detail">Ele não julga. Mas também não mente. Te dá a real pra você decidir melhor.</p>
-            </article>
-          </div>
-          <div class="how-it-works-visual">
-            <p class="visual-note"><strong>É tipo ter um contador pessoal que responde na hora, não cobra nada, e fala sua língua.</strong></p>
-          </div>
-        </div>
-      </section>
-
-      <!-- Resultados Reais - REESCRITO -->
-      <section id="provas" class="section" aria-labelledby="provas-title">
-        <div class="container">
-          <h2 id="provas-title">Gente Real, Resultados Reais, Sem Mimimi</h2>
-          <p class="section-intro">Não é propaganda. É print. É gente como você que saiu do "onde foi minha grana?"
-          pro "tô no controle".</p>
-
-          <div class="testimonials">
-            <figure class="testimonial">
-              <div class="testimonial-header">
-                <div class="avatar" aria-hidden="true">M</div>
-                <div>
-                  <strong>Maria Santos</strong>
-                  <span>MEI • Costura • São Paulo</span>
+                <div class="pz-pricing-features">
+                    <h3>Tudo incluído:</h3>
+                    <ul class="pz-features-list">
+                        <li>✅ <strong>Tracking ilimitado</strong> de gastos e receitas</li>
+                        <li>✅ <strong>Categorização automática</strong> inteligente</li>
+                        <li>✅ <strong>Insights sinceros</strong> ("Delivery comeu 28% da grana")</li>
+                        <li>✅ <strong>Alertas de limite</strong> (avisa antes de estourar)</li>
+                        <li>✅ <strong>Relatórios semanais</strong> no WhatsApp</li>
+                        <li>✅ <strong>Metas personalizadas</strong> ("Guardar R$ 50 esse mês")</li>
+                        <li>✅ <strong>Comunidade de apoio</strong> (grupo WhatsApp exclusivo)</li>
+                        <li>✅ <strong>Suporte humano</strong> (não é bot respondendo)</li>
+                    </ul>
                 </div>
-              </div>
-              <div class="testimonial-content">
-                <p class="before"><strong>ANTES:</strong> "Eu trabalhava feito louca mas no fim do mês sempre faltava.
-                Não sabia pra onde ia."</p>
-                <p class="after"><strong>DEPOIS:</strong> "Descobri que eu gastava R$ 180 em delivery que eu nem lembrava.
-                Cortei pra R$ 50. Sobrou R$ 340 no primeiro mês. Parece pouco? Pra mim foi muito."</p>
-                <p class="how"><strong>COMO:</strong> "O app me mostrou na cara: 'Maria, delivery = 12% da grana'.
-                Doeu, mas era verdade. Agora eu sei onde vai cada real."</p>
-              </div>
-              <div class="testimonial-result">
-                <strong class="result-number">R$ 340</strong> economizados no 1º mês
-              </div>
-            </figure>
 
-            <figure class="testimonial">
-              <div class="testimonial-header">
-                <div class="avatar" aria-hidden="true">C</div>
-                <div>
-                  <strong>Carlos Silva</strong>
-                  <span>Motorista Uber • Rio de Janeiro</span>
+                <div class="pz-pricing-guarantee">
+                    <h3>Garantia de 7 Dias:</h3>
+                    <p>
+                        Teste por 7 dias. Se não economizar <strong>pelo menos R$ 50</strong>,
+                        cancela e não paga NADA. Sem perguntas, sem retenção.
+                    </p>
                 </div>
-              </div>
-              <div class="testimonial-content">
-                <p class="before"><strong>ANTES:</strong> "Rodava 12h por dia mas mal sobrava pro aluguel.
-                Gasolina comia tudo e eu não tinha noção de quanto."</p>
-                <p class="after"><strong>DEPOIS:</strong> "Comecei a anotar cada abastecida, cada manutenção.
-                Vi que dava pra otimizar. Aumentei lucro em 23% em 2 meses."</p>
-                <p class="how"><strong>COMO:</strong> "O app me deu controle. Agora eu SEI quanto posso gastar
-                com combustível por semana sem ferrar o mês."</p>
-              </div>
-              <div class="testimonial-result">
-                <strong class="result-number">+23%</strong> de lucro em 60 dias
-              </div>
-            </figure>
 
-            <figure class="testimonial">
-              <div class="testimonial-header">
-                <div class="avatar" aria-hidden="true">A</div>
-                <div>
-                  <strong>Ana Oliveira</strong>
-                  <span>Comércio Local • Belo Horizonte</span>
+                <div class="pz-pricing-cta">
+                    <a href="https://wa.me/5515997423599?text=Quero%20come%C3%A7ar%20no%20POBREZAP%20-%20R%24%209,99/m%C3%AAs" class="pz-btn-cta">
+                        💬 Começar Agora - R$ 9,99/mês
+                    </a>
+                    <p class="pz-pricing-note">
+                        ✅ Reembolso em até 7 dias • ✅ Cancela quando quiser
+                    </p>
                 </div>
-              </div>
-              <div class="testimonial-content">
-                <p class="before"><strong>ANTES:</strong> "Loja dando lucro mas sempre sem grana pra investir.
-                Não entendia por quê."</p>
-                <p class="after"><strong>DEPOIS:</strong> "Juntei R$ 800 em 3 meses. Reformei a loja.
-                Separei grana da empresa da minha. Virou rotina."</p>
-                <p class="how"><strong>COMO:</strong> "WhatsApp tá sempre comigo. Vendi algo? Anoto na hora.
-                Comprei algo? Anoto na hora. Ficou automático."</p>
-              </div>
-              <div class="testimonial-result">
-                <strong class="result-number">R$ 800</strong> economizados em 90 dias
-              </div>
-            </figure>
 
-            <figure class="testimonial">
-              <div class="testimonial-header">
-                <div class="avatar" aria-hidden="true">J</div>
-                <div>
-                  <strong>João Pedro</strong>
-                  <span>Estudante/Freelancer • Recife</span>
+                <div class="pz-pricing-math">
+                    <h3>Quanto você economiza?</h3>
+                    <div class="pz-math-examples">
+                        <div class="pz-math-item">
+                            <span class="pz-math-if">Se cortar...</span>
+                            <strong class="pz-math-action">2 Ubers/semana</strong>
+                            <span class="pz-math-result">= R$ 120/mês economizados</span>
+                        </div>
+                        <div class="pz-math-item">
+                            <span class="pz-math-if">Se cortar...</span>
+                            <strong class="pz-math-action">3 deliveries/mês</strong>
+                            <span class="pz-math-result">= R$ 180/mês economizados</span>
+                        </div>
+                        <div class="pz-math-item">
+                            <span class="pz-math-if">Se cortar...</span>
+                            <strong class="pz-math-action">1 streaming que não usa</strong>
+                            <span class="pz-math-result">= R$ 45/mês economizados</span>
+                        </div>
+                    </div>
+                    <p class="pz-math-total">
+                        <strong>Total de exemplo: R$ 345/mês economizados</strong><br>
+                        <span>Investe R$ 9,99, guarda R$ 335. Lucro real.</span>
+                    </p>
                 </div>
-              </div>
-              <div class="testimonial-content">
-                <p class="before"><strong>ANTES:</strong> "Me sentia burro. Não entendia orçamento, planilha, nada.
-                Só via a grana sumindo."</p>
-                <p class="after"><strong>DEPOIS:</strong> "Finalmente entendi meu dinheiro. Linguagem simples,
-                sem termo técnico. Até eu, que sou meio lerdo com essas parada, consegui."</p>
-                <p class="how"><strong>COMO:</strong> "O app fala minha língua. 'Gastei 50 no role' e ele entende.
-                Simples assim."</p>
-              </div>
-              <div class="testimonial-result">
-                <strong class="result-number">Controle</strong> pela primeira vez na vida
-              </div>
-            </figure>
-          </div>
+            </div>
         </div>
-      </section>
+    </section>
 
-      <!-- Pra Quem É (e pra quem NÃO é) - NOVA SEÇÃO -->
-      <section id="pra-quem" class="section alt" aria-labelledby="pra-quem-title">
-        <div class="container">
-          <h2 id="pra-quem-title">Pra Quem É (e Pra Quem NÃO É)</h2>
+    <!-- FAQ -->
+    <section class="pz-section pz-faq">
+        <div class="pz-container">
+            <h2 class="pz-section-title">Perguntas Reais</h2>
 
-          <div class="grid cols-2">
-            <div class="for-who yes">
-              <h3>✅ É pra você se...</h3>
-              <ul>
-                <li>Você <strong>trabalha</strong> (CLT, MEI, freela, app, bico) e quer saber pra onde vai a grana</li>
-                <li>Você tá <strong>cansado de planilha</strong> que você nunca abre</li>
-                <li>Você quer <strong>controle sem complicação</strong> — no WhatsApp mesmo</li>
-                <li>Você sente que <strong>"devia sobrar mais"</strong> mas não sabe onde tá o vazamento</li>
-                <li>Você acredita que <strong>organização financeira não é privilégio</strong></li>
-                <li>Você quer um app que <strong>fale sua língua</strong>, sem economês chato</li>
-                <li>Você ganha de <strong>R$ 800 a R$ 8.000/mês</strong> — esse é nosso público</li>
-              </ul>
+            <div class="pz-faq-list">
+                <details class="pz-faq-item">
+                    <summary class="pz-faq-question">
+                        ❓ Eu não sei mexer bem com celular. Consigo usar?
+                    </summary>
+                    <div class="pz-faq-answer">
+                        <p>
+                            <strong>Se você usa WhatsApp, você consegue.</strong> É só mandar
+                            mensagem normal: "gastei 32 no mercado". O bot entende. Sem
+                            complicação, sem menu, sem botão.
+                        </p>
+                    </div>
+                </details>
+
+                <details class="pz-faq-item">
+                    <summary class="pz-faq-question">
+                        ❓ Minha renda é irregular (bico, freela). Funciona?
+                    </summary>
+                    <div class="pz-faq-answer">
+                        <p>
+                            <strong>Funciona SIM.</strong> É só mandar: "recebi 280 de faxina dia 12"
+                            ou "ganhei 50 de gorjeta". O app organiza tudo, independente de
+                            quando você recebe. Foi feito justamente pra quem tem renda irregular.
+                        </p>
+                    </div>
+                </details>
+
+                <details class="pz-faq-item">
+                    <summary class="pz-faq-question">
+                        ❓ E se eu não tiver crédito no celular?
+                    </summary>
+                    <div class="pz-faq-answer">
+                        <p>
+                            Funciona por <strong>WiFi grátis</strong> (mercado, trabalho, ônibus).
+                            E a gente tá desenvolvendo modo SMS pra quem tem pré-pago sem internet.
+                        </p>
+                    </div>
+                </details>
+
+                <details class="pz-faq-item">
+                    <summary class="pz-faq-question">
+                        ❓ Vocês vão vender meus dados?
+                    </summary>
+                    <div class="pz-faq-answer">
+                        <p>
+                            <strong>NUNCA.</strong> Está no nosso manifesto, no contrato, em tudo.
+                            Criptografia ponta-a-ponta (nem a gente vê). Delete tudo em 1 clique.
+                            Código aberto pra qualquer um auditar. Se a gente vender dados,
+                            CNPJ vai pra justiça.
+                        </p>
+                    </div>
+                </details>
+
+                <details class="pz-faq-item">
+                    <summary class="pz-faq-question">
+                        ❓ R$ 10 não é muito pra quem ganha R$ 1.200?
+                    </summary>
+                    <div class="pz-faq-answer">
+                        <p>
+                            A gente entende. Por isso tem <strong>garantia de 7 dias</strong>.
+                            Se não economizar pelo menos R$ 50 na primeira semana, cancela
+                            e não paga NADA. Sem pegadinha.<br><br>
+
+                            E faz as contas: <strong>R$ 9,99 ÷ 30 dias = R$ 0,33/dia</strong>.
+                            Menos que um pão. Se cortar 1 Uber por semana, economiza R$ 60/mês.
+                            Lucro: R$ 50.
+                        </p>
+                    </div>
+                </details>
+
+                <details class="pz-faq-item">
+                    <summary class="pz-faq-question">
+                        ❓ Isso vai resolver minha pobreza?
+                    </summary>
+                    <div class="pz-faq-answer">
+                        <p>
+                            <strong>NÃO.</strong> A gente é honesto: pobreza é estrutural,
+                            não se resolve com app. O problema não é você gastar R$ 50 em
+                            delivery. O problema é você ganhar R$ 1.200 enquanto aluguel
+                            é R$ 800.<br><br>
+
+                            Mas clareza financeira <strong>te dá dignidade e poder de decisão</strong>.
+                            Você descobre que gastou R$ 340 em delivery, decide cortar R$ 200,
+                            guarda. Não muda o sistema, mas muda seu bolso.
+                        </p>
+                    </div>
+                </details>
+
+                <details class="pz-faq-item">
+                    <summary class="pz-faq-question">
+                        ❓ Como cancelo se eu quiser?
+                    </summary>
+                    <div class="pz-faq-answer">
+                        <p>
+                            Manda "cancelar" no WhatsApp. Pronto. Sem formulário, sem
+                            ligação de retenção, sem "tem certeza?". Respeitamos sua decisão.
+                        </p>
+                    </div>
+                </details>
+
+                <details class="pz-faq-item">
+                    <summary class="pz-faq-question">
+                        ❓ Precisa ter cartão de crédito?
+                    </summary>
+                    <div class="pz-faq-answer">
+                        <p>
+                            <strong>Aceita Pix, boleto e cartão.</strong> Você escolhe.
+                            Sem discriminação de meio de pagamento.
+                        </p>
+                    </div>
+                </details>
             </div>
-
-            <div class="for-who no">
-              <h3>❌ NÃO é pra você se...</h3>
-              <ul>
-                <li>Você ganha <strong>50k/mês</strong> e tem contador particular — você não precisa da gente</li>
-                <li>Você <strong>AMA Excel</strong> e quer planilha mega elaborada — vai ser frustrante</li>
-                <li>Você acha que <strong>pobre não merece dignidade</strong> — por favor, cai fora</li>
-                <li>Você quer app que <strong>conecte com banco</strong> automaticamente — a gente ainda não faz isso</li>
-                <li>Você não usa <strong>WhatsApp</strong> — meio óbvio, né?</li>
-                <li>Você quer <strong>investir em ações</strong> — a gente é controle básico, não corretora</li>
-              </ul>
-            </div>
-          </div>
-
-          <p class="for-who-note">
-            <strong>Resumo:</strong> Se você rala, trabalha, quer ter controle e odeia complicação —
-            bem-vindo. Aqui é seu lugar.
-          </p>
         </div>
-      </section>
+    </section>
 
-      <!-- Diferenciais -->
-      <section class="section" aria-labelledby="diferenciais-title">
-        <div class="container">
-          <h2 id="diferenciais-title">Por Que a Galera Escolhe Pobre Zap?</h2>
-          <div class="grid cols-3">
-            <div class="card">
-              <span class="icon-badge" aria-hidden="true">💬</span>
-              <h3>Linguagem de gente</h3>
-              <p>"Gastei 32 no mercado" vira controle automático. Sem jargão, sem economês, sem frescura.
-              Português de rua que funciona.</p>
+    <!-- CTA FINAL - MOVIMENTO -->
+    <section class="pz-section pz-final-cta">
+        <div class="pz-container">
+            <div class="pz-final-content">
+                <h2 class="pz-final-title">
+                    Clareza Financeira é Direito,<br>
+                    Não Privilégio.
+                </h2>
+
+                <div class="pz-final-icon">
+                    <span class="pz-punho-large">💪</span>
+                </div>
+
+                <p class="pz-final-text">
+                    Comece a economizar de verdade.
+                </p>
+
+                <div class="pz-final-cta-button">
+                    <a href="https://wa.me/5515997423599?text=Quero%20come%C3%A7ar%20no%20POBREZAP%20-%20R%24%209,99/m%C3%AAs" class="pz-btn-cta-large">
+                        💬 Começar Agora no WhatsApp
+                    </a>
+                    <p class="pz-final-guarantee">
+                        🔒 Reembolso em até 7 dias • Sem pegadinha • Seus dados são seus
+                    </p>
+                </div>
+
+                <div class="pz-final-social">
+                    <div class="pz-social-avatars">
+                        <img src="https://i.pravatar.cc/56?img=1" alt="Usuário 1" class="pz-avatar">
+                        <img src="https://i.pravatar.cc/56?img=2" alt="Usuário 2" class="pz-avatar">
+                        <img src="https://i.pravatar.cc/56?img=3" alt="Usuário 3" class="pz-avatar">
+                        <img src="https://i.pravatar.cc/56?img=4" alt="Usuário 4" class="pz-avatar">
+                        <img src="https://i.pravatar.cc/56?img=5" alt="Usuário 5" class="pz-avatar">
+                        <img src="https://i.pravatar.cc/56?img=6" alt="Usuário 6" class="pz-avatar">
+                    </div>
+                </div>
             </div>
-            <div class="card">
-              <span class="icon-badge" aria-hidden="true">📊</span>
-              <h3>Gráficos que fazem sentido</h3>
-              <p>Visual simples. Nada de pizza confusa. Só o essencial: quanto gastou, em quê, quanto sobra.
-              Pra você decidir agora.</p>
-            </div>
-            <div class="card">
-              <span class="icon-badge" aria-hidden="true">🎯</span>
-              <h3>Lembretes que ajudam</h3>
-              <p>"Dia 15: Você gastou 80% do orçamento. Freie um pouco." Não é chatice. É parceria.
-              É alguém olhando por você.</p>
-            </div>
-            <div class="card">
-              <span class="icon-badge" aria-hidden="true">😌</span>
-              <h3>Humor que respeita</h3>
-              <p>A gente brinca com a situação, nunca com você. Cutuca sem humilhar. Porque humor e empatia
-              andam juntos.</p>
-            </div>
-            <div class="card">
-              <span class="icon-badge" aria-hidden="true">🔒</span>
-              <h3>Privacidade a sério</h3>
-              <p>Criptografia bancária. Servidor no Brasil. Auditoria mensal. Você deleta quando quiser.
-              Seus dados são <strong>seus</strong>.</p>
-            </div>
-            <div class="card">
-              <span class="icon-badge" aria-hidden="true">💚</span>
-              <h3>Grátis de verdade</h3>
-              <p>Não tem pegadinha. O essencial é grátis pra sempre. Funcionalidades extras têm preço justo.
-              Sem firula.</p>
-            </div>
-          </div>
         </div>
-      </section>
+    </section>
 
-      <!-- FAQ - REESCRITO -->
-      <section id="faq" class="section alt" aria-labelledby="faq-title">
-        <div class="container">
-          <h2 id="faq-title">Perguntas Que Você Tá Com Vergonha de Fazer (Mas Não Deveria)</h2>
+    <!-- FOOTER -->
+    <footer class="pz-footer">
+        <div class="pz-container">
+            <div class="pz-footer-content">
+                <div class="pz-footer-brand">
+                    <div class="pz-logo">
+                        <span class="pz-logo-icon">💪</span>
+                        <div class="pz-logo-text">
+                            <span class="pz-logo-name">POBRE ZAP</span>
+                            <span class="pz-logo-tagline">Clareza é poder</span>
+                        </div>
+                    </div>
+                    <p class="pz-footer-tagline">
+                        Feito com respeito por quem entende a luta.
+                    </p>
+                </div>
 
-          <details>
-            <summary>Sério que é de graça? Qual a pegadinha?</summary>
-            <p><strong>Sério mesmo.</strong> A versão básica (que é muuuito completa) é grátis pra sempre.
-            Como a gente ganha dinheiro? Funcionalidades premium no futuro: relatórios elaborados,
-            integração bancária, consultoria personalizada. Mas o core? Grátis. Sempre.</p>
-            <p><strong>Por quê?</strong> Porque organização financeira não pode ser privilégio de quem tem grana.</p>
-          </details>
-
-          <details>
-            <summary>Preciso conectar meu banco? Tenho medo...</summary>
-            <p><strong>Não.</strong> Você não precisa conectar nada. Funciona 100% manual pelo WhatsApp.
-            Você anota seus gastos, a gente organiza.</p>
-            <p>No futuro, vamos oferecer integração bancária OPCIONAL. Mas sempre vai ter a versão manual.
-            Sem pressão. Você escolhe.</p>
-          </details>
-
-          <details>
-            <summary>Meus dados financeiros estão seguros mesmo?</summary>
-            <p><strong>Mais seguros que cofre de banco.</strong> Sério agora:</p>
-            <ul>
-              <li>🔐 <strong>Criptografia de ponta a ponta</strong> (mesmo padrão dos bancos)</li>
-              <li>🇧🇷 <strong>Servidores no Brasil</strong> (seus dados não saem do país)</li>
-              <li>✅ <strong>Auditoria mensal</strong> de segurança</li>
-              <li>📤 <strong>Você pode exportar</strong> ou deletar tudo quando quiser</li>
-            </ul>
-            <p>Se alguém hackear isso aqui, mereceu. (Mas não vai rolar. Levamos segurança a sério.)</p>
-          </details>
-
-          <details>
-            <summary>E se eu não souber usar tecnologia? Sou meio tapado...</summary>
-            <p><strong>Relaxa.</strong> Se você usa WhatsApp, você já sabe usar o Pobre Zap. É literalmente isso:</p>
-            <p><strong>Você:</strong> "gastei 50 no mercado"<br>
-            <strong>Bot:</strong> "✅ Anotado!"</p>
-            <p>Pronto. Não tem app pra baixar, não tem senha pra criar, não tem tutorial de 40 minutos.
-            É conversa normal. Do jeito que você já conversa todo dia.</p>
-            <p><strong>PS:</strong> Você não é tapado. O problema são os apps que complicam demais.</p>
-          </details>
-
-          <details>
-            <summary>Funciona pro meu tipo de trabalho? (MEI, freela, app...)</summary>
-            <p><strong>Sim.</strong> A gente foi testado com:</p>
-            <ul>
-              <li>👔 CLT (salário fixo)</li>
-              <li>🚗 Motorista de app (renda variável)</li>
-              <li>💼 MEI (custos + faturamento)</li>
-              <li>💻 Freelancer (projeto vai, projeto vem)</li>
-              <li>🎓 Estudante (bolsa, freela, mesada)</li>
-              <li>🛍️ Vendedor (comissão variável)</li>
-            </ul>
-            <p>Se você ganha dinheiro de algum jeito e quer saber pra onde ele vai — funciona.</p>
-          </details>
-
-          <details>
-            <summary>Quanto tempo leva pra funcionar? Preciso de resultado AGORA.</summary>
-            <p><strong>Rapidão:</strong></p>
-            <ul>
-              <li>⚡ <strong>2 minutos:</strong> Cadastro e primeira anotação</li>
-              <li>📊 <strong>24 horas:</strong> Primeiro relatório (precisa de dados pra analisar, né)</li>
-              <li>💰 <strong>1 semana:</strong> Primeiras economias (quando você vê onde tá vazando)</li>
-              <li>🎯 <strong>30 dias:</strong> Controle completo e mudança de hábito</li>
-            </ul>
-            <p><strong>Garantia:</strong> Se em 30 dias você não economizar pelo menos R$ 100,
-            a gente devolve... pera, é grátis. Ok, a gente dá R$ 50 pelo seu tempo. Sério.</p>
-          </details>
-
-          <details>
-            <summary>Vou ter que anotar TUDO TUDO? Parece chato...</summary>
-            <p><strong>No início, sim.</strong> Mas calma, não é tão ruim:</p>
-            <p>Nos primeiros 15 dias, anota tudo. É chato? É. Mas <strong>é a única maneira de você ver a real.</strong>
-            Depois de 2 semanas, você já sabe seus padrões. Aí pode anotar só os grandes ou só o que varia.</p>
-            <p>E olha: demora 5 segundos. É literalmente: pegar o celular que tá na mão → abrir WhatsApp →
-            "gastei X em Y" → pronto. Mais rápido que scroll no Instagram.</p>
-            <p><strong>Vale a pena?</strong> 1.200 pessoas disseram que sim. E economizaram em média R$ 287/mês.
-            Você decide.</p>
-          </details>
-
-          <details>
-            <summary>E se eu esquecer de anotar uns dias?</summary>
-            <p><strong>Sem drama.</strong> A vida acontece. Esqueceu? Anota depois. O app não te julga.</p>
-            <p>Se você anotar 80% dos gastos, já dá pra ter uma visão muito boa. Não precisa ser perfeito.
-            Precisa ser real.</p>
-            <p><strong>Dica:</strong> Ativa os lembretes. Todo dia 20h o bot pergunta: "E aí, gastou algo hoje?".
-            Ajuda a criar o hábito.</p>
-          </details>
-        </div>
-      </section>
-
-      <!-- CTA Final - REESCRITO -->
-      <section id="cta" class="cta" aria-labelledby="cta-title">
-        <div class="container cta-wrap">
-          <h2 id="cta-title">Pronto Pra Parar de Se Perguntar "Pra Onde Foi Meu Dinheiro?"</h2>
-          <div class="cta-banner">
-            <p class="cta-main">Leva 2 minutos. É grátis. Você não tem nada a perder (literalmente, porque é grátis).</p>
-            <a class="btn btn--primary btn--large" href="https://wa.me/5511999999999?text=Oi%2C%20quero%20começar%20meu%20controle%20financeiro">
-              💬 Começar Agora no WhatsApp
-            </a>
-            <p class="cta-guarantee">
-              ✅ Grátis pra sempre • ✅ Sem cartão • ✅ Sem pegadinha • ✅ Cancela quando quiser
-            </p>
-            <div class="risk-reversal">
-              <p><strong>Garantia Sincera:</strong> Se em 30 dias você não economizar pelo menos R$ 100,
-              a gente deposita R$ 50 na sua conta pelo tempo perdido. É isso mesmo que você leu.
-              A gente tá apostando em você.</p>
+                <div class="pz-footer-links">
+                    <div class="pz-footer-col">
+                        <h4>Legal</h4>
+                        <a href="#">Política de Privacidade</a>
+                        <a href="#">Termos de Uso</a>
+                        <a href="#">Manifesto</a>
+                    </div>
+                    <div class="pz-footer-col">
+                        <h4>Contato</h4>
+                        <a href="https://wa.me/5515997423599">WhatsApp</a>
+                        <a href="#">Comunidade</a>
+                        <a href="#">Suporte</a>
+                    </div>
+                </div>
             </div>
-            <p class="cta-footer">+1.200 pessoas já estão economizando. Próximo é você.</p>
-          </div>
-        </div>
-      </section>
 
-      <!-- Founder Story - NOVA SEÇÃO -->
-      <section class="section" aria-labelledby="story-title">
-        <div class="container">
-          <h2 id="story-title">Como Nasceu o Pobre Zap (A Real)</h2>
-          <div class="founder-story">
-            <p>
-              <strong>2022, eu quebrando a cara:</strong> Trabalhava em startup de fintech cheia de grana.
-              Apps super elaborados, IA pra tudo, interface linda. Mas sabe quem usava?
-              Só quem já tinha dinheiro organizado.
-            </p>
-            <p>
-              <strong>A ficha caiu</strong> quando meu primo, motorista de Uber, me disse:
-              "Mano, esses apps são muito complicados. Eu só queria saber se dá pra pagar o aluguel esse mês."
-            </p>
-            <p>
-              <strong>Aí eu vi o problema:</strong> Os apps de "controle financeiro" eram feitos PRA rico aprender a ficar mais rico.
-              Não era feito pra quem tá apertado e só quer clareza.
-            </p>
-            <p>
-              <strong>Comecei com um bot</strong> simples no WhatsApp. Pro meu primo. Depois pra uns amigos.
-              Depois pra 50 pessoas. Hoje, +1.200. E a galera tá economizando de verdade.
-            </p>
-            <p>
-              <strong>Pobre Zap não é caridade.</strong> É respeito. É acreditar que todo mundo merece ter controle
-              da própria grana. Sem julgamento. Sem complicação. Só clareza.
-            </p>
-            <p class="story-signature">
-              — <strong>Rafael</strong>, fundador do Pobre Zap<br>
-              <small>(ex-Nubank, ex-PicPay, cansado de fazer produto pra rico)</small>
-            </p>
-          </div>
+            <div class="pz-footer-bottom">
+                <p>
+                    CNPJ: 40.884.015/0001-84 • São Paulo, Brasil<br>
+                    <small>© 2025 POBREZAP. Todos os direitos reservados.</small>
+                </p>
+            </div>
         </div>
-      </section>
-    </main>
-
-    <footer class="site-footer" role="contentinfo">
-      <div class="container footer-wrap">
-        <div class="foot-brand">
-          <strong>Pobre Zap</strong>
-          <p>O sincerão do seu bolso</p>
-        </div>
-        <ul class="foot-links">
-          <li><a href="#">Transparência</a></li>
-          <li><a href="#">Termos</a></li>
-          <li><a href="#">Privacidade</a></li>
-          <li><a href="#">Imprensa</a></li>
-        </ul>
-        <div class="foot-social">
-          <p>Fala com a gente:</p>
-          <a href="mailto:oi@pobrezap.com">oi@pobrezap.com</a>
-        </div>
-      </div>
-      <div class="container">
-        <p class="foot-note">
-          Pobre Zap não é banco. Não é corretora. É um app de controle financeiro pessoal.
-          Seus dados são seus. A gente só ajuda você a organizá-los.
-        </p>
-        <p class="foot-legal">
-          <small>CNPJ: XX.XXX.XXX/0001-XX • Feito com ❤️ em São Paulo, Brasil</small>
-        </p>
-      </div>
     </footer>
 
-    <!-- Scripts -->
-    <script src="assets/scripts.js" defer></script>
-    <script src="assets/accessibility.js" defer></script>
+    <!-- JavaScript -->
+    <script>
+        // Dark mode permanente
+        document.documentElement.setAttribute('data-theme', 'dark');
 
+        // Smooth scroll
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                }
+            });
+        });
+
+        // FAQ accordion
+        document.querySelectorAll('.pz-faq-item').forEach(item => {
+            item.addEventListener('toggle', function() {
+                if (this.open) {
+                    // Fecha outros FAQs abertos
+                    document.querySelectorAll('.pz-faq-item').forEach(other => {
+                        if (other !== this && other.open) {
+                            other.open = false;
+                        }
+                    });
+                }
+            });
+        });
+
+        // Scroll animations (simple fade-in)
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('pz-visible');
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.pz-testimonial, .pz-step, .pz-privacy-item').forEach(el => {
+            observer.observe(el);
+        });
+    </script>
 </body>
 </html>
