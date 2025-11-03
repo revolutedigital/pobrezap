@@ -29,7 +29,7 @@ Avaliado por socióloga (IBGE), economista comportamental, assistente social, ps
 ## 💰 Modelo de Negócio
 
 - **Preço:** R$ 9,99/mês
-- **ROI médio:** 28x (usuários economizam R$ 287/mês)
+- **Economia média:** R$ 287/mês (vale muito a pena)
 - **Garantia:** Reembolso em até 7 dias
 - **Sem pegadinha:** Cancela quando quiser
 
