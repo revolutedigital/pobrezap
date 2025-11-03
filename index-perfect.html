@@ -1,0 +1,1257 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pobre Zap - O Sincerão do Seu Bolso no WhatsApp</title>
+    <meta name="description" content="Tá no fim do mês e não sabe pra onde foi o dinheiro? App de controle financeiro direto no WhatsApp por R$ 3,99/mês.">
+
+    <!-- Performance & SEO -->
+    <meta name="robots" content="index, follow">
+    <meta name="googlebot" content="index, follow">
+    <link rel="canonical" href="https://pobrezap.com">
+
+    <!-- DNS Prefetch for Performance -->
+    <link rel="dns-prefetch" href="//fonts.googleapis.com">
+    <link rel="dns-prefetch" href="//fonts.gstatic.com">
+
+    <!-- Preconnect for Critical Resources -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <!-- Preload Critical CSS -->
+    <link rel="preload" href="assets/styles.css" as="style">
+    <link rel="preload" href="assets/performance.css" as="style">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>💬</text></svg>">
+    <link rel="apple-touch-icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>💬</text></svg>">
+
+    <!-- Stylesheets -->
+    <!-- <link rel="stylesheet" href="assets/styles.min.css"> Minified version - needs update -->
+    <link rel="stylesheet" href="assets/styles.css">
+    <link rel="stylesheet" href="assets/performance.css">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Pobre Zap - O Sincerão do Seu Bolso no WhatsApp">
+    <meta property="og:description" content="Controle financeiro sem planilha, sem app chato. R$ 3,99/mês.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://pobrezap.com">
+    <meta property="og:site_name" content="Pobre Zap">
+    <meta property="og:locale" content="pt_BR">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Pobre Zap - O Sincerão do Seu Bolso no WhatsApp">
+    <meta name="twitter:description" content="Controle financeiro sem planilha, sem app chato. R$ 3,99/mês.">
+    <meta name="twitter:site" content="@pobrezap">
+
+    <!-- Theme Color -->
+    <meta name="theme-color" content="#1d9a4d">
+    <meta name="msapplication-TileColor" content="#1d9a4d">
+
+    <!-- Accessibility -->
+    <meta name="color-scheme" content="light dark">
+
+    <!-- Schema.org Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "SoftwareApplication",
+      "name": "Pobre Zap",
+      "description": "Controle financeiro via WhatsApp. Sem planilha, sem app chato, sem enrolação.",
+      "url": "https://pobrezap.com",
+      "applicationCategory": "FinanceApplication",
+      "operatingSystem": "WhatsApp",
+      "offers": {
+        "@type": "Offer",
+        "price": "3.99",
+        "priceCurrency": "BRL"
+      }
+    }
+    </script>
+
+    <style>
+      /* Critical CSS inline para performance */
+      .live-counter { display: inline-flex; align-items: center; gap: 8px; }
+      .live-counter .pulse {
+        width: 8px; height: 8px;
+        background: #22c55e;
+        border-radius: 50%;
+        animation: pulse 2s infinite;
+      }
+      @keyframes pulse {
+        0%, 100% { opacity: 1; transform: scale(1); }
+        50% { opacity: 0.5; transform: scale(1.2); }
+      }
+      .transition-breadcrumb {
+        text-align: center;
+        font-size: 1.125rem;
+        color: #64748b;
+        margin: 3rem auto;
+        max-width: 600px;
+        font-style: italic;
+      }
+    </style>
+</head>
+<body class="performance-optimized">
+    <!-- Skip to Main Content for Accessibility -->
+    <a href="#main-content" class="skip-link sr-only-focusable">Pular para o conteúdo principal</a>
+
+    <!-- ARIA Live Region for Screen Readers -->
+    <div aria-live="polite" aria-atomic="true" class="sr-only" id="live-region"></div>
+
+    <!-- Header -->
+    <header class="header" role="banner">
+        <nav class="nav container" aria-label="Navegação principal">
+            <div class="nav__brand">
+                <a href="#" class="nav__logo" aria-label="Pobre Zap - Página inicial">
+                    <span class="logo-icon" aria-hidden="true">
+                      <svg width="20" height="20" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" role="img" aria-hidden="true">
+                        <defs>
+                          <linearGradient id="logoGrad" x1="0" y1="0" x2="1" y2="1">
+                            <stop offset="0%" stop-color="#1d9a4d"/>
+                            <stop offset="100%" stop-color="#0f766e"/>
+                          </linearGradient>
+                        </defs>
+                        <path d="M6 5h9a4 4 0 0 1 4 4v4a4 4 0 0 1-4 4h-6l-2.5 2a1 1 0 0 1-1.5-.86V17H6a4 4 0 0 1-4-4V9a4 4 0 0 1 4-4Z" fill="url(#logoGrad)" opacity="0.9"/>
+                        <path d="M8 9h5.5a2 2 0 1 1 0 4H8V9ZM8 13h2.5l3.5 3" stroke="#fff" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+                      </svg>
+                    </span>
+                    <span class="logo-text">Pobre Zap</span>
+                </a>
+            </div>
+
+            <button class="nav__toggle"
+                    aria-expanded="false"
+                    aria-controls="nav-menu"
+                    aria-label="Abrir menu de navegação"
+                    type="button">
+                <span class="hamburger" aria-hidden="true"></span>
+            </button>
+
+            <ul class="nav__menu" id="nav-menu">
+                <li><a href="#como-funciona" class="nav__link">Como Funciona</a></li>
+                <li><a href="#provas" class="nav__link">Resultados Reais</a></li>
+                <li><a href="#pra-quem" class="nav__link">É Pra Mim?</a></li>
+                <li><a href="#faq" class="nav__link">Dúvidas</a></li>
+                <li><a href="#cta" class="nav__link btn btn--primary">Começar Agora</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- URGENCY BANNER - P0.3 -->
+    <div id="urgency-banner" class="urgency-banner" role="banner" aria-live="polite">
+      <div class="urgency-container">
+        <div class="urgency-content">
+          <div class="urgency-offer">
+            <span class="urgency-badge">🔥 Oferta de Lançamento</span>
+            <strong class="urgency-text">
+              Primeiros 100 usuários: <span class="highlight-price">1º mês por R$ 1,99</span>
+            </strong>
+          </div>
+
+          <div class="urgency-counter">
+            <div class="counter-info">
+              <span class="counter-number" id="users-count">47</span>
+              <span class="counter-label">/100 já garantiram</span>
+            </div>
+            <div class="progress-container">
+              <div class="progress-bar">
+                <div class="progress-fill" id="progress-fill" style="width: 47%"></div>
+              </div>
+            </div>
+            <small class="urgency-note">Depois volta para <span data-price>R$ 4,99/mês</span></small>
+          </div>
+
+          <button class="urgency-close" aria-label="Fechar banner" onclick="closeUrgencyBanner()">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Preço Único: R$ 9,99/mês -->
+    <script>
+      // Preço fixo (sem A/B testing)
+      const PRICE = {
+        value: 9.99,
+        label: 'R$ 9,99/mês'
+      };
+
+      // Update all price elements on page load
+      document.addEventListener('DOMContentLoaded', () => {
+        // Update all price mentions
+        const priceElements = document.querySelectorAll('[data-price]');
+        priceElements.forEach(el => {
+          el.textContent = PRICE.label;
+        });
+
+        // Update WhatsApp links with correct price
+        const ctaLinks = document.querySelectorAll('a[href*="wa.me"]');
+        ctaLinks.forEach(link => {
+          const currentHref = link.href;
+          const newHref = currentHref.replace(/R\$%20\d+,\d+/g, `R$%20${PRICE.value.toFixed(2).replace('.', ',')}`);
+          link.href = newHref;
+        });
+      });
+    </script>
+
+    <!-- Urgency Banner JavaScript - P0.3 -->
+    <script>
+      // Simulate real counter (in production, this would fetch from API)
+      const TOTAL_SPOTS = 100;
+      let currentUsers = 47; // Starting value
+
+      // Update counter every 30-60 seconds (simulate real users signing up)
+      function updateUrgencyCounter() {
+        // Random chance of increment (simulating real signups)
+        if (Math.random() > 0.7 && currentUsers < TOTAL_SPOTS) {
+          currentUsers++;
+
+          // Update DOM
+          document.getElementById('users-count').textContent = currentUsers;
+          document.getElementById('progress-fill').style.width = `${currentUsers}%`;
+
+          // If all spots taken, update message
+          if (currentUsers >= TOTAL_SPOTS) {
+            const banner = document.getElementById('urgency-banner');
+            banner.querySelector('.urgency-text').innerHTML =
+              'Oferta encerrada! <span class="highlight-price">Lista de espera aberta</span>';
+            banner.querySelector('.counter-info').innerHTML =
+              '<span class="counter-number">100</span><span class="counter-label">/100 - Completo!</span>';
+          }
+
+          // Track event
+          if (typeof gtag !== 'undefined') {
+            gtag('event', 'urgency_counter_update', {
+              'event_category': 'engagement',
+              'current_count': currentUsers
+            });
+          }
+        }
+      }
+
+      // Update counter periodically
+      setInterval(updateUrgencyCounter, 45000); // Every 45 seconds
+
+      // Close banner function
+      function closeUrgencyBanner() {
+        const banner = document.getElementById('urgency-banner');
+        banner.style.display = 'none';
+        sessionStorage.setItem('urgencyBannerClosed', 'true');
+      }
+
+      // Check if banner was previously closed
+      if (sessionStorage.getItem('urgencyBannerClosed')) {
+        document.getElementById('urgency-banner').style.display = 'none';
+      }
+
+      // Production API call (commented for now)
+      /*
+      async function fetchRealCounter() {
+        try {
+          const response = await fetch('/api/early-users-count');
+          const data = await response.json();
+
+          currentUsers = data.count;
+          document.getElementById('users-count').textContent = currentUsers;
+          document.getElementById('progress-fill').style.width = `${currentUsers}%`;
+
+        } catch (error) {
+          console.error('Failed to fetch user count:', error);
+        }
+      }
+
+      // Fetch real data on load
+      fetchRealCounter();
+
+      // Update every 30 seconds
+      setInterval(fetchRealCounter, 30000);
+      */
+    </script>
+
+    <!-- Main Content -->
+    <main id="main-content" role="main">
+        <!-- Hero Section -->
+        <section class="hero section" aria-labelledby="hero-title">
+            <div class="container">
+                <div class="hero__content fade-in-up">
+                    <h1 id="hero-title" class="hero__title">
+                        Dia 25 e o Dinheiro Sumiu?<br>
+                        <span class="text-gradient">Tipo Mágica, Mas Sem Graça Nenhuma</span>
+                    </h1>
+                    <p class="hero__subtitle">
+                        <strong>Pobre Zap é aquele amigo chato que fala a verdade:</strong> "Mano, você gastou R$ 340 em delivery esse mês.
+                        São 23% da sua grana. Tá ligado?"<br><br>
+                        No WhatsApp, sem planilha que você nunca abre, sem app que você instala e esquece.
+                        É só mandar <strong>"gastei 32 no mercado"</strong> e pronto. Ele organiza. Ele avisa. Ele te sacode.
+                    </p>
+                    <div class="hero__actions">
+                        <a href="#cta" class="btn btn--primary btn--large"
+                           aria-describedby="cta-description">
+                            💬 Começar Agora por <span data-price>R$ 4,99/mês</span>
+                        </a>
+                        <!-- MELHORADO: CTA Secundário Específico -->
+                        <a href="#demo" class="btn btn--secondary btn--large">
+                            ▶️ Ver Exemplo Real (15 seg)
+                        </a>
+                    </div>
+                    <p class="hero__guarantee">
+                        ✅ <span data-price>R$ 4,99/mês</span> • ✅ Cancela quando quiser • ✅ Sem pegadinha
+                    </p>
+                    <p class="hero__honest-social">
+                        <small>🚀 <strong>Produto novo:</strong> Estamos começando. Seja um dos primeiros a ter controle de verdade por menos que um café.</small>
+                    </p>
+                    <p id="cta-description" class="sr-only">
+                        Abra o WhatsApp e comece a controlar suas finanças em 2 minutos
+                    </p>
+                </div>
+                <figure class="hero__art" aria-hidden="true">
+                  <svg viewBox="0 0 560 360" xmlns="http://www.w3.org/2000/svg" role="img">
+                    <defs>
+                      <linearGradient id="heroGradient" x1="0" y1="0" x2="1" y2="1">
+                        <stop offset="0%" stop-color="#1d9a4d"/>
+                        <stop offset="100%" stop-color="#0f766e"/>
+                      </linearGradient>
+                    </defs>
+                    <rect x="20" y="20" width="520" height="320" rx="24" fill="#ffffff" stroke="#e2e8f0"/>
+                    <circle cx="100" cy="110" r="42" fill="url(#heroGradient)" opacity="0.18"/>
+                    <circle cx="460" cy="240" r="32" fill="url(#heroGradient)" opacity="0.12"/>
+                    <path d="M220 90h200a24 24 0 0 1 24 24v76a24 24 0 0 1-24 24h-130l-34 28a6 6 0 0 1-10-5v-23h-26a24 24 0 0 1-24-24v-76a24 24 0 0 1 24-24z" fill="#1d9a4d" opacity="0.25"/>
+                    <rect x="240" y="110" width="160" height="16" rx="8" fill="#0f172a" opacity="0.85"/>
+                    <rect x="240" y="140" width="200" height="10" rx="5" fill="#475569" opacity="0.8"/>
+                    <rect x="240" y="160" width="180" height="10" rx="5" fill="#64748b" opacity="0.8"/>
+                    <rect x="80" y="210" width="180" height="14" rx="7" fill="url(#heroGradient)"/>
+                    <rect x="80" y="238" width="120" height="10" rx="5" fill="#64748b" opacity="0.7"/>
+                  </svg>
+                </figure>
+            </div>
+        </section>
+
+      <!-- VIDEO DEMO - P0.1 -->
+      <section id="video-demo" class="section video-section" aria-labelledby="video-title">
+        <div class="container">
+          <h2 id="video-title" class="text-center">Veja Como Funciona em 30 Segundos</h2>
+          <p class="section-intro text-center">Assista uma demonstração real do Pobre Zap em ação</p>
+
+          <div class="video-wrapper">
+            <!-- PLACEHOLDER: Substituir VIDEO_ID pelo ID real do YouTube após upload -->
+            <div class="video-container">
+              <iframe
+                width="560"
+                height="315"
+                src="https://www.youtube.com/embed/dQw4w9WgXcQ"
+                title="Pobre Zap - Demonstração de 30 segundos"
+                frameborder="0"
+                loading="lazy"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen>
+              </iframe>
+            </div>
+
+            <!-- Fallback para quando não há vídeo ainda -->
+            <div class="video-placeholder" style="display: none;">
+              <div class="placeholder-content">
+                <span class="placeholder-icon">▶️</span>
+                <h3>Vídeo em Produção</h3>
+                <p>Estamos gravando uma demo incrível pra você!</p>
+                <a href="#demo" class="btn btn--secondary">Ver Demo em Texto ↓</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="video-cta">
+            <p><strong>Gostou?</strong> É exatamente assim, simples e direto.</p>
+            <a href="#cta" class="btn btn--primary btn--large">
+              💬 Começar Agora por <span data-price>R$ 4,99/mês</span>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- Conversa Real - DEMO -->
+      <section id="demo" class="section demo-conversation" aria-labelledby="demo-title">
+        <div class="container">
+          <h2 id="demo-title">Tipo Assim, Na Prática:</h2>
+          <div class="whatsapp-demo">
+            <div class="chat-bubble user">
+              <p><strong>Você:</strong> gastei 150 no mercado</p>
+              <span class="timestamp">14:23</span>
+            </div>
+            <div class="chat-bubble bot">
+              <p><strong>Pobre Zap:</strong> ✅ Anotado!</p>
+              <p><strong>Mercado:</strong> R$ 150,00</p>
+              <p>📊 <strong>Este mês:</strong> R$ 1.247,00 de R$ 1.500,00</p>
+              <p>⚠️ <strong>Atenção:</strong> Sobram R$ 253,00 pra 12 dias</p>
+              <p>💡 <strong>Dica:</strong> Freie os delivery, mano. Já foram R$ 340,00 esse mês.</p>
+              <span class="timestamp">14:23</span>
+            </div>
+            <div class="chat-bubble user">
+              <p><strong>Você:</strong> onde eu mais gasto?</p>
+              <span class="timestamp">14:25</span>
+            </div>
+            <div class="chat-bubble bot">
+              <p><strong>Pobre Zap:</strong> Top 3 gastanças de janeiro:</p>
+              <p>🍕 <strong>Delivery:</strong> R$ 340,00 (23%)</p>
+              <p>🚗 <strong>Uber:</strong> R$ 280,00 (19%)</p>
+              <p>🛒 <strong>Mercado:</strong> R$ 450,00 (30%)</p>
+              <p>🎯 <strong>Corta o delivery</strong> e sobra grana pra investir, brother.</p>
+              <span class="timestamp">14:25</span>
+            </div>
+          </div>
+          <p class="demo-note">Sem planilha. Sem app. Só conversa normal no WhatsApp que você já usa todo dia.</p>
+        </div>
+      </section>
+
+      <!-- NOVO: Seção Viral - Tipos de Pobre -->
+      <section class="section viral-moment" aria-labelledby="tipos-title">
+        <div class="container">
+          <h2 id="tipos-title">Qual é o Seu Tipo de Pobre?</h2>
+          <p class="section-intro">(Spoiler: Pobre Zap é pra todos 👇)</p>
+
+          <div class="grid cols-3">
+            <div class="card humor">
+              <h3>🎩 Pobre Chique</h3>
+              <p><strong>"Eu não tô sem grana, tô sem liquidez."</strong></p>
+              <p>Tem iPhone, mora de aluguel, come miojo gourmet. Pobre Zap vai te mostrar que aquele cafezinho de R$ 12 tá custando o aluguel.</p>
+            </div>
+
+            <div class="card humor">
+              <h3>💪 Pobre Raiz</h3>
+              <p><strong>"Eu sei onde tá meu dinheiro: não tá."</strong></p>
+              <p>Trabalha 12h, rala no corre, sabe quanto ganha mas nunca sabe quanto sobra. Pobre Zap organiza sua vida sem você precisar ser contador.</p>
+            </div>
+
+            <div class="card humor">
+              <h3>😅 Pobre em Negação</h3>
+              <p><strong>"Eu controlo sim... mais ou menos... tipo..."</strong></p>
+              <p>Tem 3 apps instalados que nunca abre, planilha no Google Drive de 2019. Pobre Zap é o único que você VAI usar porque é no WhatsApp.</p>
+            </div>
+          </div>
+
+          <p class="viral-punchline">
+            <strong>A real?</strong> Se você ganha até R$ 5 mil/mês, você é pobre. E TÁ TUDO BEM.
+            A diferença tá em quem admite e faz algo a respeito. 💚
+          </p>
+        </div>
+      </section>
+
+      <!-- TRANSIÇÃO -->
+      <p class="transition-breadcrumb">
+        Entendeu a vibe? Agora a parte séria ↓
+      </p>
+
+      <!-- O Problema - EXPANDIDO com mais emoções -->
+      <section class="section problem" aria-labelledby="problem-title">
+        <div class="container">
+          <h2 id="problem-title">Você Conhece Esse Filme? (E Essas Emoções?)</h2>
+          <div class="grid cols-2">
+            <!-- NOVO: Raiva -->
+            <div class="problem-item">
+              <span class="problem-icon">😡</span>
+              <h3>Aquela RAIVA quando a fatura chega</h3>
+              <p>Você abre o app do banco. Vê o número. Sente o sangue subir.
+              "COMO EU GASTEI ISSO?!" Raiva de você mesmo. Vontade de voltar no tempo e se dar um tapa.</p>
+            </div>
+            <div class="problem-item">
+              <span class="problem-icon">😰</span>
+              <h3>Dia 25 chegou... e a conta não fecha</h3>
+              <p>Conta tá no vermelho, você jura que não gastou tanto, mas a matemática não mente.
+              Onde foi parar aqueles R$ 1.500,00 que você ganhou? Mistério que te tira o sono.</p>
+            </div>
+            <!-- NOVO: Vergonha -->
+            <div class="problem-item">
+              <span class="problem-icon">😔</span>
+              <h3>A vergonha de "não saber se controlar"</h3>
+              <p>Seus amigos parecem ter tudo resolvido. Você? Não consegue poupar R$ 50,00.
+              "Talvez eu seja ruim com dinheiro mesmo..." Mentira. Você só não tem clareza.</p>
+            </div>
+            <div class="problem-item">
+              <span class="problem-icon">📊</span>
+              <h3>Tentou planilha... durou 3 dias</h3>
+              <p>Baixou 3 apps, abriu 2 planilhas. Começou bem. Até esquecer de anotar um dia.
+              Depois perdeu a senha. Depois desanimou. A vida tá corrida demais pra isso.</p>
+            </div>
+            <div class="problem-item">
+              <span class="problem-icon">🤯</span>
+              <h3>Os "só" que destroem orçamento</h3>
+              <p>"Só um Uber", "só um lanche", "só esse streaming".
+              Mas no fim do mês, esses "só" viraram R$ 600,00 que você nem viu passar.</p>
+            </div>
+            <!-- NOVO: Cansaço -->
+            <div class="problem-item">
+              <span class="problem-icon">😫</span>
+              <h3>Cansaço de viver no aperto</h3>
+              <p>Você trabalha, rala, faz bico, tenta de tudo. Mas parece que nunca sobra.
+              Não é culpa sua. É falta de clareza. E clareza a gente resolve.</p>
+            </div>
+          </div>
+
+          <div class="cta-inline mt-6">
+            <h3>Para de se culpar. O problema não é você. É a falta de clareza.</h3>
+            <a class="btn btn--primary btn--large" href="#cta">💬 Começar por <span data-price>R$ 4,99/mês</span></a>
+          </div>
+        </div>
+      </section>
+
+      <!-- TRANSIÇÃO -->
+      <p class="transition-breadcrumb">
+        Antes de começar: o que é (e o que NÃO é) ↓
+      </p>
+
+      <!-- Manifesto -->
+      <section id="manifesto" class="section alt" aria-labelledby="manifesto-title">
+        <div class="container">
+          <h2 id="manifesto-title">O Manifesto</h2>
+          <div class="manifesto-content">
+            <p class="manifesto-intro">
+              <strong>Olha, vamos ser sinceros:</strong> A gente nasceu pra ser o sincerão do seu bolso.
+              Aquele amigo chato que fala na lata, mas que você precisa ouvir.
+            </p>
+            <div class="grid cols-2">
+              <div>
+                <p>
+                  A gente <strong>sabe</strong> como é: boleto, busão, aluguel, o cafezinho que vira rombo,
+                  a sensação de que o mês tem 60 dias e o salário dura 15.
+                </p>
+                <p>
+                  <strong>Sem papo engravatado.</strong> Sem jargão de coach financeiro.
+                  Sem gráfico pizza que você não entende. Só clareza bruta: "Mano, você gasta R$ 340 em delivery.
+                  Isso é 23% da sua grana. Tá ligado?"
+                </p>
+              </div>
+              <div>
+                <p>
+                  Aqui é controle financeiro <strong>do jeito real, do seu jeito.</strong> No WhatsApp que você já usa.
+                  Com lembrete na hora certa. Com humor que cutuca sem humilhar. Com respeito.
+                </p>
+                <p>
+                  <strong>Porque organização financeira não é privilégio.</strong> É direito.
+                  E é especialmente importante pra quem tem pouco — porque cada R$ conta, cada decisão importa,
+                  cada economia pode ser a diferença entre apertar ou respirar.
+                </p>
+              </div>
+            </div>
+            <p class="manifesto-signature">
+              <strong>Pobre Zap: O app que fala a verdade que você precisa ouvir.</strong>
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- TRANSIÇÃO -->
+      <p class="transition-breadcrumb">
+        Como funciona na prática? 3 passos ↓
+      </p>
+
+      <!-- Como funciona - OTIMIZADO para Featured Snippets -->
+      <section id="como-funciona" class="section" aria-labelledby="como-title">
+        <div class="container">
+          <h2 id="como-title">Como Funciona o Pobre Zap? (É Ridiculamente Simples)</h2>
+
+          <!-- NOVO: Lista estruturada para Featured Snippet -->
+          <div class="featured-snippet-box">
+            <p><strong>Resumo rápido em 3 passos:</strong></p>
+            <ol class="featured-list">
+              <li><strong>Manda mensagem no WhatsApp:</strong> "gastei R$ 32,00 no mercado"</li>
+              <li><strong>O app organiza automaticamente:</strong> Categoriza, soma, mostra quanto sobra</li>
+              <li><strong>Recebe insights sinceros:</strong> "Delivery comeu 23% da grana. Freie um pouco."</li>
+            </ol>
+          </div>
+
+          <div class="steps">
+            <article class="step">
+              <h3>1. Manda mensagem no WhatsApp</h3>
+              <p><strong>Você:</strong> "gastei R$ 32,00 no mercado"<br>
+              <strong>Ou:</strong> "recebi R$ 1.200,00 do trampo"<br>
+              <strong>Ou:</strong> "paguei R$ 80,00 de luz"</p>
+              <p class="step-detail">O bot entende português de rua. Não precisa ser formal. Escreve do seu jeito.</p>
+            </article>
+            <article class="step">
+              <h3>2. Ele organiza automaticamente</h3>
+              <p>Classifica os gastos (mercado, transporte, lazer, etc), soma tudo,
+              mostra quanto você gastou do orçamento, avisa quando tá no limite.</p>
+              <p class="step-detail">Sem você fazer nada. Só mandar a mensagem e pronto.</p>
+            </article>
+            <article class="step">
+              <h3>3. Recebe insights sinceros</h3>
+              <p><strong>"Ó, delivery comeu 23% da grana esse mês. Talvez seja hora de cozinhar mais, né?"</strong></p>
+              <p class="step-detail">Ele não julga. Mas também não mente. Te dá a real pra você decidir melhor.</p>
+            </article>
+          </div>
+          <div class="how-it-works-visual">
+            <p class="visual-note"><strong>É tipo ter um contador pessoal que responde na hora, não cobra nada, e fala sua língua.</strong></p>
+          </div>
+        </div>
+      </section>
+
+      <!-- NOVA TRANSIÇÃO com emoção -->
+      <!-- Como funciona -->
+      <section id="provas" class="section alt" aria-labelledby="provas-title">
+        <div class="container">
+          <h2 id="provas-title">Como o Pobre Zap Pode Te Ajudar</h2>
+          <p class="section-intro">Controle financeiro não precisa ser complicado. Veja o que o app faz por você:</p>
+
+          <div class="grid cols-3">
+            <div class="card">
+              <span class="icon-badge" aria-hidden="true">📝</span>
+              <h3>Você anota simples</h3>
+              <p>Manda no WhatsApp: "gastei R$ 32 no mercado". Pronto. O app entende e organiza tudo automaticamente.</p>
+            </div>
+            <div class="card">
+              <span class="icon-badge" aria-hidden="true">📊</span>
+              <h3>Vê pra onde vai a grana</h3>
+              <p>Relatórios claros mostram quanto você gasta em cada categoria. Sem enrolação, só os fatos.</p>
+            </div>
+            <div class="card">
+              <span class="icon-badge" aria-hidden="true">💡</span>
+              <h3>Toma decisões melhores</h3>
+              <p>Com os dados na mão, você decide onde cortar, onde investir, e quanto pode gastar sem apertar.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- TRANSIÇÃO -->
+      <p class="transition-breadcrumb">
+        É pra você? Descubra ↓
+      </p>
+
+      <!-- Pra Quem É -->
+      <section id="pra-quem" class="section" aria-labelledby="pra-quem-title">
+        <div class="container">
+          <h2 id="pra-quem-title">Pra Quem É (e Pra Quem NÃO É)</h2>
+
+          <div class="grid cols-2">
+            <div class="for-who yes">
+              <h3>✅ É pra você se...</h3>
+              <ul>
+                <li>Você <strong>trabalha</strong> (CLT, MEI, freela, app, bico) e quer saber pra onde vai a grana</li>
+                <li>Você tá <strong>cansado de planilha</strong> que você nunca abre</li>
+                <li>Você quer <strong>controle sem complicação</strong> — no WhatsApp mesmo</li>
+                <li>Você sente que <strong>"devia sobrar mais"</strong> mas não sabe onde tá o vazamento</li>
+                <li>Você acredita que <strong>organização financeira não é privilégio</strong></li>
+                <li>Você quer um app que <strong>fale sua língua</strong>, sem economês chato</li>
+                <li>Você ganha de <strong>R$ 800,00 a R$ 8.000,00/mês</strong> — esse é nosso público</li>
+              </ul>
+            </div>
+
+            <div class="for-who no">
+              <h3>❌ NÃO é pra você se...</h3>
+              <ul>
+                <li>Você ganha <strong>R$ 50.000,00/mês</strong> e tem contador particular — você não precisa da gente</li>
+                <li>Você <strong>AMA Excel</strong> e quer planilha mega elaborada — vai ser frustrante</li>
+                <li>Você acha que <strong>pobre não merece dignidade</strong> — por favor, cai fora</li>
+                <li>Você quer app que <strong>conecte com banco</strong> automaticamente — a gente ainda não faz isso</li>
+                <li>Você não usa <strong>WhatsApp</strong> — meio óbvio, né?</li>
+                <li>Você quer <strong>investir em ações</strong> — a gente é controle básico, não corretora</li>
+              </ul>
+            </div>
+          </div>
+
+          <p class="for-who-note">
+            <strong>Resumo:</strong> Se você rala, trabalha, quer ter controle e odeia complicação —
+            bem-vindo. Aqui é seu lugar.
+          </p>
+        </div>
+      </section>
+
+      <!-- TRANSIÇÃO -->
+      <p class="transition-breadcrumb">
+        Por que escolher Pobre Zap? ↓
+      </p>
+
+      <!-- Diferenciais -->
+      <section class="section alt" aria-labelledby="diferenciais-title">
+        <div class="container">
+          <h2 id="diferenciais-title">Por Que a Galera Escolhe Pobre Zap?</h2>
+          <div class="grid cols-3">
+            <div class="card">
+              <span class="icon-badge" aria-hidden="true">💬</span>
+              <h3>Linguagem de gente</h3>
+              <p>"Gastei R$ 32,00 no mercado" vira controle automático. Sem jargão, sem economês, sem frescura.
+              Português de rua que funciona.</p>
+            </div>
+            <div class="card">
+              <span class="icon-badge" aria-hidden="true">📊</span>
+              <h3>Gráficos que fazem sentido</h3>
+              <p>Visual simples. Nada de pizza confusa. Só o essencial: quanto gastou, em quê, quanto sobra.
+              Pra você decidir agora.</p>
+            </div>
+            <div class="card">
+              <span class="icon-badge" aria-hidden="true">🎯</span>
+              <h3>Lembretes que ajudam</h3>
+              <p>"Dia 15: Você gastou 80% do orçamento. Freie um pouco." Não é chatice. É parceria.
+              É alguém olhando por você.</p>
+            </div>
+            <div class="card">
+              <span class="icon-badge" aria-hidden="true">😌</span>
+              <h3>Humor que respeita</h3>
+              <p>A gente brinca com a situação, nunca com você. Cutuca sem humilhar. Porque humor e empatia
+              andam juntos.</p>
+            </div>
+            <div class="card">
+              <span class="icon-badge" aria-hidden="true">🔒</span>
+              <h3>Privacidade a sério</h3>
+              <p>Seus dados são <strong>seus</strong>. Você deleta quando quiser. Simples assim.</p>
+            </div>
+            <div class="card">
+              <span class="icon-badge" aria-hidden="true">💰</span>
+              <h3>Preço justo</h3>
+              <p><strong><span data-price>R$ 4,99/mês</span>.</strong> Menos que um café. Sem pegadinha, sem cartão escondido.
+              Cancela quando quiser.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- FAQ -->
+      <section id="faq" class="section" aria-labelledby="faq-title">
+        <div class="container">
+          <h2 id="faq-title">Perguntas Que Você Tá Com Vergonha de Fazer (Mas Não Deveria)</h2>
+
+          <details>
+            <summary>Por que esse preço? Não é caro?</summary>
+            <p><strong>É menos que um café.</strong> <span data-price>R$ 4,99/mês</span> = R$ 0,16 por dia.</p>
+            <p>Você gasta isso sem nem perceber. E se o app te ajudar a economizar R$ 50,00 no mês?
+            Já pagou 12 meses.</p>
+            <p><strong>Por quê não é grátis?</strong> Porque queremos construir um produto sustentável,
+            que funcione de verdade, sem vender seus dados ou encher de propaganda.</p>
+          </details>
+
+          <details>
+            <summary>Preciso conectar meu banco? Tenho medo...</summary>
+            <p><strong>Não.</strong> Você não precisa conectar nada. Funciona 100% manual pelo WhatsApp.
+            Você anota seus gastos, a gente organiza.</p>
+            <p>No futuro, vamos oferecer integração bancária OPCIONAL. Mas sempre vai ter a versão manual.
+            Sem pressão. Você escolhe.</p>
+          </details>
+
+          <details>
+            <summary>Meus dados financeiros estão seguros mesmo?</summary>
+            <p><strong>Levamos segurança a sério.</strong> Seus dados são criptografados e você pode exportar ou deletar tudo quando quiser.</p>
+            <p>Usamos as melhores práticas do mercado para proteger suas informações.</p>
+          </details>
+
+          <details>
+            <summary>E se eu não souber usar tecnologia? Sou meio tapado...</summary>
+            <p><strong>Relaxa.</strong> Se você usa WhatsApp, você já sabe usar o Pobre Zap. É literalmente isso:</p>
+            <p><strong>Você:</strong> "gastei R$ 50,00 no mercado"<br>
+            <strong>Bot:</strong> "✅ Anotado!"</p>
+            <p>Pronto. Não tem app pra baixar, não tem senha pra criar, não tem tutorial de 40 minutos.
+            É conversa normal. Do jeito que você já conversa todo dia.</p>
+            <p><strong>PS:</strong> Você não é tapado. O problema são os apps que complicam demais.</p>
+          </details>
+
+          <details>
+            <summary>Funciona pro meu tipo de trabalho? (MEI, freela, app...)</summary>
+            <p><strong>Sim.</strong> A gente foi testado com:</p>
+            <ul>
+              <li>👔 CLT (salário fixo)</li>
+              <li>🚗 Motorista de app (renda variável)</li>
+              <li>💼 MEI (custos + faturamento)</li>
+              <li>💻 Freelancer (projeto vai, projeto vem)</li>
+              <li>🎓 Estudante (bolsa, freela, mesada)</li>
+              <li>🛍️ Vendedor (comissão variável)</li>
+            </ul>
+            <p>Se você ganha dinheiro de algum jeito e quer saber pra onde ele vai — funciona.</p>
+          </details>
+
+          <details>
+            <summary>Quanto tempo leva pra funcionar? Preciso de resultado AGORA.</summary>
+            <p><strong>Rapidão:</strong></p>
+            <ul>
+              <li>⚡ <strong>2 minutos:</strong> Cadastro e primeira anotação</li>
+              <li>📊 <strong>24 horas:</strong> Primeiro relatório (precisa de dados pra analisar, né)</li>
+              <li>💰 <strong>1 semana:</strong> Primeiras economias (quando você vê onde tá vazando)</li>
+              <li>🎯 <strong>30 dias:</strong> Controle completo e mudança de hábito</li>
+            </ul>
+          </details>
+
+          <details>
+            <summary>Vou ter que anotar TUDO TUDO? Parece chato...</summary>
+            <p><strong>No início, sim.</strong> Mas calma, não é tão ruim:</p>
+            <p>Nos primeiros 15 dias, anota tudo. É chato? É. Mas <strong>é a única maneira de você ver a real.</strong>
+            Depois de 2 semanas, você já sabe seus padrões. Aí pode anotar só os grandes ou só o que varia.</p>
+            <p>E olha: demora 5 segundos. É literalmente: pegar o celular que tá na mão → abrir WhatsApp →
+            "gastei X em Y" → pronto. Mais rápido que scroll no Instagram.</p>
+            <p>Você decide se vale a pena. Teste e veja por você mesmo.</p>
+          </details>
+
+          <details>
+            <summary>E se eu esquecer de anotar uns dias?</summary>
+            <p><strong>Sem drama.</strong> A vida acontece. Esqueceu? Anota depois. O app não te julga.</p>
+            <p>Se você anotar 80% dos gastos, já dá pra ter uma visão muito boa. Não precisa ser perfeito.
+            Precisa ser real.</p>
+            <p><strong>Dica:</strong> Ativa os lembretes. Todo dia 20h o bot pergunta: "E aí, gastou algo hoje?".
+            Ajuda a criar o hábito.</p>
+          </details>
+        </div>
+      </section>
+
+      <!-- TRANSIÇÃO -->
+      <p class="transition-breadcrumb">
+        Pronto pra começar? ↓
+      </p>
+
+      <!-- CTA Final -->
+      <section id="cta" class="cta" aria-labelledby="cta-title">
+        <div class="container cta-wrap">
+          <h2 id="cta-title">Pronto Pra Parar de Se Perguntar "Pra Onde Foi Meu Dinheiro?"</h2>
+          <div class="cta-banner">
+            <p class="cta-main">
+              <strong><span data-price>R$ 4,99/mês</span>.</strong> Menos que um café. Mais controle que muito app caro.<br>
+              Comece hoje. Economize amanhã. Cada dia conta.
+            </p>
+
+            <!-- CTA Direto pro WhatsApp -->
+            <div class="cta-buttons">
+              <a href="https://wa.me/5515997423599?text=Oi%2C%20quero%20come%C3%A7ar%20no%20Pobre%20Zap%20por%20R%24%203%2C99%2Fm%C3%AAs"
+                 class="btn btn--primary btn--large btn--whatsapp">
+                💬 Começar Agora no WhatsApp
+              </a>
+              <p class="cta-help">
+                <small>↑ Clica aqui. Abre no WhatsApp. Cadastro em 2 minutos. É <span data-price>R$ 4,99/mês</span>.</small>
+              </p>
+            </div>
+
+            <p class="cta-guarantee">
+              ✅ <span data-price>R$ 4,99/mês</span> • ✅ Cancela quando quiser • ✅ Sem pegadinha • ✅ Sem burocracia
+            </p>
+
+            <div class="cta-urgency">
+              <p class="urgency-real">
+                ⏰ <strong>Quanto mais você espera, mais dinheiro vaza sem você ver.</strong><br>
+                <small>Cada semana sem controle = uma média de R$ 50-100 perdidos em gastos que você nem lembra.
+                Comece hoje. Recupere amanhã.</small>
+              </p>
+            </div>
+
+          </div>
+        </div>
+      </section>
+
+    </main>
+
+    <!-- Footer - ATUALIZADO com tom -->
+    <footer class="site-footer" role="contentinfo">
+      <div class="container footer-wrap">
+        <div class="foot-brand">
+          <strong>Pobre Zap</strong>
+          <p>O sincerão do seu bolso</p>
+        </div>
+        <ul class="foot-links">
+          <li><a href="#">Transparência</a></li>
+          <li><a href="#">Termos</a></li>
+          <li><a href="#">Privacidade</a></li>
+          <li><a href="#">Imprensa</a></li>
+        </ul>
+        <div class="foot-social">
+          <p>Fala com a gente:</p>
+          <a href="mailto:oi@pobrezap.com">oi@pobrezap.com</a>
+        </div>
+      </div>
+      <div class="container">
+        <!-- MELHORADO: Footer com tom -->
+        <p class="foot-note">
+          Pobre Zap não é banco (ufa, menos burocracia). Não é corretora (não vamos te vender cripto).
+          É só um app que ajuda você a não se perguntar "cadê meu dinheiro?" todo dia 25.
+          Seus dados são seus. A gente só ajuda você a organizá-los.
+        </p>
+        <p class="foot-legal">
+          <small>CNPJ: 40.884.015/0001-84 • Feito com ❤️ e muito café em São Paulo, Brasil</small>
+        </p>
+      </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="assets/scripts.js" defer></script>
+    <script src="assets/accessibility.js" defer></script>
+
+    <!-- Email capture form script -->
+    <script>
+      // Email capture form
+      document.getElementById('early-access-form')?.addEventListener('submit', async (e) => {
+        e.preventDefault();
+        const email = e.target.querySelector('#email').value;
+        const button = e.target.querySelector('button');
+        const originalText = button.textContent;
+
+        button.textContent = 'Enviando...';
+        button.disabled = true;
+
+        // Simular envio (em produção, enviaria para API)
+        await new Promise(resolve => setTimeout(resolve, 1500));
+
+        // Redirecionar para WhatsApp
+        window.location.href = `https://wa.me/5515997423599?text=Oi%2C%20meu%20email%20é%20${encodeURIComponent(email)}%20e%20quero%20começar%20meu%20controle%20financeiro`;
+      });
+    </script>
+
+    <!-- EXIT INTENT POPUP - P0.2 -->
+    <div id="exit-popup" class="exit-modal hidden" role="dialog" aria-labelledby="exit-title" aria-modal="true">
+      <div class="exit-overlay" aria-hidden="true"></div>
+      <div class="exit-content">
+        <button class="exit-close" aria-label="Fechar popup" onclick="closeExitPopup()">&times;</button>
+
+        <div class="exit-body">
+          <span class="exit-emoji">🖐️</span>
+          <h2 id="exit-title">Ei, péra aí!</h2>
+
+          <div class="exit-offer">
+            <p class="exit-headline">
+              Que tal <strong>7 DIAS GRÁTIS</strong> pra testar?
+            </p>
+            <p class="exit-subtext">
+              Sem cartão de crédito, sem pegadinha, sem compromisso.
+            </p>
+          </div>
+
+          <div class="exit-benefits">
+            <ul>
+              <li>✅ Acesso completo por 7 dias</li>
+              <li>✅ Cancela quando quiser</li>
+              <li>✅ Suporte direto no WhatsApp</li>
+            </ul>
+          </div>
+
+          <div class="exit-actions">
+            <button class="btn btn--primary btn--large" onclick="acceptExitOffer()">
+              🎉 Quero 7 Dias Grátis!
+            </button>
+            <button class="btn btn--ghost" onclick="closeExitPopup()">
+              Não, obrigado
+            </button>
+          </div>
+
+          <p class="exit-disclaimer">
+            <small>*Após 7 dias, apenas <span data-price>R$ 4,99/mês</span>. Cancela quando quiser.</small>
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Exit Intent JavaScript - P0.2 -->
+    <script>
+      // Exit Intent Detection
+      let exitIntentShown = false;
+      let mouseY = 0;
+      let mouseX = 0;
+
+      // Track mouse position
+      document.addEventListener('mousemove', (e) => {
+        mouseY = e.clientY;
+        mouseX = e.clientX;
+      });
+
+      // Detect exit intent
+      document.addEventListener('mouseout', (e) => {
+        // Check if mouse is leaving the viewport from the top
+        if (mouseY <= 10 && e.clientY <= 0 && !exitIntentShown) {
+          // Check if user has not seen the popup in this session
+          if (!sessionStorage.getItem('exitPopupShown')) {
+            showExitPopup();
+          }
+        }
+      });
+
+      // Also show on mobile when user scrolls up quickly (intent to leave)
+      let lastScrollTop = 0;
+      let scrollVelocity = 0;
+
+      window.addEventListener('scroll', () => {
+        const st = window.pageYOffset || document.documentElement.scrollTop;
+        scrollVelocity = lastScrollTop - st;
+
+        // If scrolling up fast near top of page
+        if (scrollVelocity > 50 && st < 200 && !exitIntentShown) {
+          if (!sessionStorage.getItem('exitPopupShown')) {
+            setTimeout(showExitPopup, 500);
+          }
+        }
+
+        lastScrollTop = st <= 0 ? 0 : st;
+      });
+
+      function showExitPopup() {
+        if (exitIntentShown) return;
+
+        const popup = document.getElementById('exit-popup');
+        popup.classList.remove('hidden');
+        popup.classList.add('show');
+
+        exitIntentShown = true;
+        sessionStorage.setItem('exitPopupShown', 'true');
+
+        // Track event
+        if (typeof gtag !== 'undefined') {
+          gtag('event', 'exit_intent_shown', {
+            'event_category': 'engagement',
+            'event_label': 'exit_popup'
+          });
+        }
+      }
+
+      function closeExitPopup() {
+        const popup = document.getElementById('exit-popup');
+        popup.classList.remove('show');
+        popup.classList.add('hidden');
+
+        // Track event
+        if (typeof gtag !== 'undefined') {
+          gtag('event', 'exit_intent_closed', {
+            'event_category': 'engagement',
+            'event_label': 'exit_popup'
+          });
+        }
+      }
+
+      function acceptExitOffer() {
+        // Track conversion
+        if (typeof gtag !== 'undefined') {
+          gtag('event', 'exit_intent_conversion', {
+            'event_category': 'conversion',
+            'event_label': 'free_trial_7_days'
+          });
+        }
+
+        // Redirect to WhatsApp with special message
+        const message = 'Oi! Vi a oferta de 7 dias grátis no site e quero testar o Pobre Zap!';
+        window.location.href = `https://wa.me/5515997423599?text=${encodeURIComponent(message)}`;
+      }
+
+      // Close on ESC key
+      document.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape' && exitIntentShown) {
+          closeExitPopup();
+        }
+      });
+
+      // Close on overlay click
+      document.querySelector('.exit-overlay')?.addEventListener('click', closeExitPopup);
+    </script>
+
+    <!-- SCROLL ANIMATIONS JavaScript - P2.1 -->
+    <script>
+      // Simple AOS-like implementation
+      function initScrollAnimations() {
+        const animatedElements = document.querySelectorAll('[data-aos]');
+
+        const observer = new IntersectionObserver((entries) => {
+          entries.forEach(entry => {
+            if (entry.isIntersecting) {
+              entry.target.classList.add('aos-animate');
+              // Optional: stop observing after animation
+              // observer.unobserve(entry.target);
+            }
+          });
+        }, {
+          threshold: 0.1,
+          rootMargin: '50px'
+        });
+
+        animatedElements.forEach(element => {
+          observer.observe(element);
+        });
+      }
+
+      // Initialize on DOM ready
+      document.addEventListener('DOMContentLoaded', initScrollAnimations);
+
+      // Add stagger animation to problem items
+      document.addEventListener('DOMContentLoaded', () => {
+        const problemItems = document.querySelectorAll('.problem-item');
+        problemItems.forEach((item, index) => {
+          item.style.animationDelay = `${index * 0.1}s`;
+          item.classList.add('stagger-animation');
+        });
+
+        // Add floating animation to icons
+        const iconBadges = document.querySelectorAll('.icon-badge');
+        iconBadges.forEach((icon, index) => {
+          icon.classList.add('float-animation');
+          icon.style.animationDelay = `${index * 0.2}s`;
+        });
+
+        // Add pulse to primary CTAs
+        const primaryButtons = document.querySelectorAll('.btn--primary.btn--large');
+        primaryButtons.forEach(btn => {
+          if (!btn.closest('.exit-modal')) {
+            btn.classList.add('pulse-animation');
+          }
+        });
+
+        // Parallax effect on scroll
+        let ticking = false;
+        function updateParallax() {
+          const scrolled = window.pageYOffset;
+          const heroArt = document.querySelector('.hero__art');
+          if (heroArt) {
+            heroArt.style.transform = `translateY(${scrolled * 0.3}px)`;
+          }
+          ticking = false;
+        }
+
+        window.addEventListener('scroll', () => {
+          if (!ticking) {
+            requestAnimationFrame(updateParallax);
+            ticking = true;
+          }
+        });
+
+        // Magnetic buttons on hover
+        document.querySelectorAll('.btn').forEach(btn => {
+          btn.addEventListener('mousemove', (e) => {
+            const rect = btn.getBoundingClientRect();
+            const x = e.clientX - rect.left - rect.width / 2;
+            const y = e.clientY - rect.top - rect.height / 2;
+
+            btn.style.transform = `translate(${x * 0.1}px, ${y * 0.1}px)`;
+          });
+
+          btn.addEventListener('mouseleave', () => {
+            btn.style.transform = '';
+          });
+        });
+
+        // Typewriter effect for hero title - DISABLED (causing issues)
+        // Will be re-enabled after testing
+        /*
+        const heroTitle = document.querySelector('.hero__title');
+        if (heroTitle) {
+          const text = heroTitle.textContent;
+          heroTitle.textContent = '';
+          heroTitle.style.opacity = '1';
+
+          let index = 0;
+          function typeWriter() {
+            if (index < text.length) {
+              heroTitle.textContent += text.charAt(index);
+              index++;
+              setTimeout(typeWriter, 50);
+            }
+          }
+
+          setTimeout(typeWriter, 500);
+        }
+        */
+
+        // Fix mobile menu - auto close on link click
+        const navLinks = document.querySelectorAll('.nav__link');
+        const navToggle = document.querySelector('.nav__toggle');
+        const navMenu = document.querySelector('.nav__menu');
+
+        navLinks.forEach(link => {
+          link.addEventListener('click', () => {
+            navMenu.classList.remove('active');
+            navToggle.setAttribute('aria-expanded', 'false');
+          });
+        });
+
+        // PERMANENT DARK MODE - Force dark theme always
+        document.documentElement.setAttribute('data-theme', 'dark');
+      });
+    </script>
+
+    <!-- CHAT WIDGET FLUTUANTE - P2.2 -->
+    <div id="chat-widget" class="chat-widget">
+      <button class="chat-trigger" onclick="toggleChatWidget()">
+        <span class="chat-icon">💬</span>
+        <span class="chat-text">Testar Agora</span>
+      </button>
+
+      <div class="chat-window hidden">
+        <div class="chat-header">
+          <h3>Pobre Zap Demo</h3>
+          <button class="chat-close" onclick="toggleChatWidget()">×</button>
+        </div>
+
+        <div class="chat-body" id="chat-messages">
+          <div class="chat-message bot">
+            <p>Oi! Sou o Pobre Zap 👋</p>
+            <p>Digite um gasto para ver como funciona!</p>
+            <p>Ex: "gastei 50 no mercado"</p>
+          </div>
+        </div>
+
+        <div class="chat-input">
+          <input type="text" id="chat-input-field" placeholder="Digite aqui..." onkeypress="handleChatInput(event)">
+          <button onclick="sendChatMessage()">Enviar</button>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      // Chat Widget Logic
+      let chatOpen = false;
+      const responses = [
+        { pattern: /gastei|comprei|paguei/i, response: "✅ Anotado! Este mês você já gastou R$ 1.247,00. Sobram R$ 253,00 para 12 dias. Cuidado com os gastos!" },
+        { pattern: /quanto|sobra|restante/i, response: "📊 Você tem R$ 253,00 disponíveis até o fim do mês. Seus maiores gastos foram: Delivery (R$ 340), Uber (R$ 280), Mercado (R$ 450)." },
+        { pattern: /oi|olá|ola/i, response: "Oi! Eu sou o Pobre Zap, seu assistente financeiro no WhatsApp. Me manda seus gastos que eu organizo tudo!" },
+        { pattern: /ajuda|help|como/i, response: "É simples: você me manda 'gastei X em Y' e eu organizo tudo. Depois pergunta 'quanto sobra?' e eu te mostro. Fácil né?" }
+      ];
+
+      function toggleChatWidget() {
+        const widget = document.getElementById('chat-widget');
+        const window = widget.querySelector('.chat-window');
+
+        chatOpen = !chatOpen;
+
+        if (chatOpen) {
+          window.classList.remove('hidden');
+          widget.classList.add('open');
+          document.getElementById('chat-input-field').focus();
+        } else {
+          window.classList.add('hidden');
+          widget.classList.remove('open');
+        }
+      }
+
+      function handleChatInput(event) {
+        if (event.key === 'Enter') {
+          sendChatMessage();
+        }
+      }
+
+      function sendChatMessage() {
+        const input = document.getElementById('chat-input-field');
+        const message = input.value.trim();
+
+        if (!message) return;
+
+        // Add user message
+        addChatMessage(message, 'user');
+
+        // Find response
+        let botResponse = "Não entendi. Tenta me dizer quanto gastou, tipo: 'gastei 30 no almoço'";
+
+        for (let r of responses) {
+          if (r.pattern.test(message)) {
+            botResponse = r.response;
+            break;
+          }
+        }
+
+        // Add bot response with delay
+        setTimeout(() => {
+          addChatMessage(botResponse, 'bot');
+        }, 500);
+
+        // Clear input
+        input.value = '';
+        input.focus();
+      }
+
+      function addChatMessage(message, sender) {
+        const messagesDiv = document.getElementById('chat-messages');
+        const messageDiv = document.createElement('div');
+        messageDiv.className = `chat-message ${sender}`;
+        messageDiv.innerHTML = `<p>${message}</p>`;
+        messagesDiv.appendChild(messageDiv);
+        messagesDiv.scrollTop = messagesDiv.scrollHeight;
+      }
+    </script>
+
+</body>
+</html>

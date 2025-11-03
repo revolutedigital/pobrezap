@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>O Manifesto - POBREZAP</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/styles-refatorado.css">
+    <style>
+        .manifesto-page {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 120px var(--pz-space-6) var(--pz-space-20);
+        }
+
+        .manifesto-hero {
+            text-align: center;
+            margin-bottom: var(--pz-space-16);
+        }
+
+        .manifesto-icon {
+            font-size: 6rem;
+            margin-bottom: var(--pz-space-6);
+            display: block;
+            animation: float 3s ease-in-out infinite;
+        }
+
+        @keyframes float {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-10px); }
+        }
+
+        .manifesto-title {
+            font-size: var(--pz-text-5xl);
+            margin-bottom: var(--pz-space-4);
+            line-height: 1.1;
+        }
+
+        .manifesto-subtitle {
+            font-size: var(--pz-text-xl);
+            color: var(--pz-green-400);
+            font-weight: 600;
+        }
+
+        .manifesto-section {
+            background: var(--pz-gray-900);
+            border-left: 4px solid var(--pz-green-500);
+            padding: var(--pz-space-8);
+            border-radius: var(--pz-radius-xl);
+            margin-bottom: var(--pz-space-12);
+        }
+
+        .manifesto-section h2 {
+            font-size: var(--pz-text-3xl);
+            color: var(--pz-white);
+            margin-bottom: var(--pz-space-6);
+            text-align: center;
+        }
+
+        .manifesto-section h3 {
+            font-size: var(--pz-text-xl);
+            color: var(--pz-green-400);
+            margin-top: var(--pz-space-6);
+            margin-bottom: var(--pz-space-3);
+        }
+
+        .manifesto-section p {
+            font-size: var(--pz-text-lg);
+            color: var(--pz-gray-100);
+            line-height: 1.8;
+            margin-bottom: var(--pz-space-4);
+        }
+
+        .manifesto-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: var(--pz-space-8);
+            margin: var(--pz-space-8) 0;
+        }
+
+        .manifesto-card {
+            background: var(--pz-gray-800);
+            padding: var(--pz-space-6);
+            border-radius: var(--pz-radius-lg);
+        }
+
+        .manifesto-card h4 {
+            font-size: var(--pz-text-xl);
+            color: var(--pz-white);
+            margin-bottom: var(--pz-space-3);
+        }
+
+        .manifesto-card p {
+            font-size: var(--pz-text-base);
+            color: var(--pz-gray-100);
+            margin: 0;
+        }
+
+        .manifesto-values {
+            list-style: none;
+            padding: 0;
+            margin: var(--pz-space-6) 0;
+        }
+
+        .manifesto-values li {
+            background: var(--pz-gray-800);
+            padding: var(--pz-space-5);
+            border-radius: var(--pz-radius-lg);
+            margin-bottom: var(--pz-space-4);
+            position: relative;
+            padding-left: var(--pz-space-10);
+        }
+
+        .manifesto-values li:before {
+            content: "✓";
+            position: absolute;
+            left: var(--pz-space-4);
+            top: var(--pz-space-5);
+            font-size: var(--pz-text-2xl);
+            color: var(--pz-green-400);
+            font-weight: bold;
+        }
+
+        .manifesto-quote {
+            background: linear-gradient(135deg, rgba(16, 185, 129, 0.1) 0%, rgba(52, 211, 153, 0.1) 100%);
+            border: 2px solid var(--pz-green-500);
+            padding: var(--pz-space-8);
+            border-radius: var(--pz-radius-xl);
+            margin: var(--pz-space-12) 0;
+            text-align: center;
+        }
+
+        .manifesto-quote p {
+            font-size: var(--pz-text-2xl);
+            font-weight: 700;
+            color: var(--pz-white);
+            margin: 0;
+            line-height: 1.4;
+        }
+
+        .manifesto-cta {
+            text-align: center;
+            background: var(--pz-gray-900);
+            padding: var(--pz-space-12);
+            border-radius: var(--pz-radius-2xl);
+            margin-top: var(--pz-space-16);
+        }
+
+        .manifesto-back {
+            display: inline-block;
+            margin-bottom: var(--pz-space-8);
+            color: var(--pz-green-400);
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        .manifesto-back:hover {
+            text-decoration: underline;
+        }
+
+        @media (max-width: 768px) {
+            .manifesto-title {
+                font-size: var(--pz-text-3xl);
+            }
+
+            .manifesto-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .manifesto-quote p {
+                font-size: var(--pz-text-xl);
+            }
+        }
+    </style>
+</head>
+<body>
+    <header class="pz-header">
+        <nav class="pz-container">
+            <div class="pz-nav">
+                <div class="pz-logo">
+                    <span class="pz-logo-icon">💪</span>
+                    <div class="pz-logo-text">
+                        <span class="pz-logo-name">POBREZAP</span>
+                        <span class="pz-logo-tagline">Clareza é poder</span>
+                    </div>
+                </div>
+                <div class="pz-nav-actions">
+                    <a href="index-refatorado.html" class="pz-btn-primary">Voltar ao Início</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="manifesto-page">
+        <a href="index-refatorado.html" class="manifesto-back">← Voltar ao início</a>
+
+        <div class="manifesto-hero">
+            <span class="manifesto-icon">💪</span>
+            <h1 class="manifesto-title">O Manifesto POBREZAP</h1>
+            <p class="manifesto-subtitle">Clareza Financeira é Direito, Não Privilégio</p>
+        </div>
+
+        <!-- INTRODUÇÃO -->
+        <div class="manifesto-section">
+            <h2>Vamos Falar a Real?</h2>
+            <p>
+                O problema não é você gastar R$ 50 em delivery.
+            </p>
+            <p>
+                <strong>O problema é você ganhar R$ 1.200 enquanto aluguel é R$ 800.</strong>
+            </p>
+            <p>
+                O problema não é você "não saber se controlar".
+            </p>
+            <p>
+                <strong>O problema é ninguém nunca ter te ensinado — porque educação financeira
+                é privilégio de classe.</strong>
+            </p>
+            <p>
+                O problema não é você ser "ruim com dinheiro".
+            </p>
+            <p>
+                <strong>O problema é um sistema que te explora, te nega informação,
+                e depois te culpa por estar no vermelho.</strong>
+            </p>
+        </div>
+
+        <!-- MAS... -->
+        <div class="manifesto-quote">
+            <p>
+                MAS...<br>
+                (e esse "mas" é importante)
+            </p>
+        </div>
+
+        <div class="manifesto-section">
+            <p>
+                Enquanto a gente luta pra mudar o sistema, a gente <strong>PODE
+                (e DEVE)</strong> ter poder sobre o nosso dinheiro.
+            </p>
+            <p>
+                Clareza financeira não resolve pobreza estrutural.<br>
+                <strong>Mas te dá dignidade. Te dá escolha. Te dá paz.</strong>
+            </p>
+            <p style="margin-bottom: 0;">
+                É por isso que existe o POBREZAP.
+            </p>
+        </div>
+
+        <!-- O QUE A GENTE É -->
+        <div class="manifesto-section">
+            <h2>O Que A Gente É</h2>
+
+            <div class="manifesto-grid">
+                <div class="manifesto-card">
+                    <h4>❌ NÃO SOMOS</h4>
+                    <p><strong>Coach financeiro</strong></p>
+                    <p style="font-size: var(--pz-text-sm); color: var(--pz-gray-300);">
+                        Aquele papo de "pare de tomar café" é insulto. A gente não faz isso.
+                    </p>
+                </div>
+
+                <div class="manifesto-card">
+                    <h4>✅ SOMOS</h4>
+                    <p><strong>Seu aliado de clareza</strong></p>
+                    <p style="font-size: var(--pz-text-sm); color: var(--pz-gray-300);">
+                        "Você gastou R$ 340 em delivery. É 28% da grana. Decide: vale ou não?"
+                    </p>
+                </div>
+
+                <div class="manifesto-card">
+                    <h4>❌ NÃO SOMOS</h4>
+                    <p><strong>App de banco</strong></p>
+                    <p style="font-size: var(--pz-text-sm); color: var(--pz-gray-300);">
+                        Que ganha com sua dívida e empurra cartão.
+                    </p>
+                </div>
+
+                <div class="manifesto-card">
+                    <h4>✅ SOMOS</h4>
+                    <p><strong>Comunidade, não empresa</strong></p>
+                    <p style="font-size: var(--pz-text-sm); color: var(--pz-gray-300);">
+                        "Jana economizou R$ 520. Carlos cortou Uber. Você também consegue."
+                    </p>
+                </div>
+
+                <div class="manifesto-card">
+                    <h4>❌ NÃO SOMOS</h4>
+                    <p><strong>"Solução pra pobreza"</strong></p>
+                    <p style="font-size: var(--pz-text-sm); color: var(--pz-gray-300);">
+                        Pobreza é política pública, não app.
+                    </p>
+                </div>
+
+                <div class="manifesto-card">
+                    <h4>✅ SOMOS</h4>
+                    <p><strong>Ferramenta de PODER</strong></p>
+                    <p style="font-size: var(--pz-text-sm); color: var(--pz-gray-300);">
+                        "Seu dinheiro, suas regras, seus dados, sua decisão."
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- NOSSOS COMPROMISSOS -->
+        <div class="manifesto-section">
+            <h2>Nossos Compromissos</h2>
+
+            <ul class="manifesto-values">
+                <li>
+                    <h3 style="margin: 0 0 var(--pz-space-2); color: var(--pz-white);">1. Seus Dados São Seus</h3>
+                    <p style="margin: 0;">
+                        Não vendemos. Não compartilhamos. Nunca.<br>
+                        Criptografia ponta-a-ponta. Deleta tudo em 1 clique, sem perguntas.
+                    </p>
+                </li>
+
+                <li>
+                    <h3 style="margin: 0 0 var(--pz-space-2); color: var(--pz-white);">2. Preço Justo, Transparente</h3>
+                    <p style="margin: 0;">
+                        R$ 9,99/mês. Sem taxa escondida, sem pegadinha.<br>
+                        Reembolso em até 7 dias. Cancela quando quiser.
+                    </p>
+                </li>
+
+                <li>
+                    <h3 style="margin: 0 0 var(--pz-space-2); color: var(--pz-white);">3. Sem Paternalismo, Sem Julgamento</h3>
+                    <p style="margin: 0;">
+                        Gastou R$ 200 em lanche? A gente mostra o número.<br>
+                        Julgar? NUNCA. Você decide. Respeito acima de tudo.
+                    </p>
+                </li>
+
+                <li>
+                    <h3 style="margin: 0 0 var(--pz-space-2); color: var(--pz-white);">4. Impacto Real, Mensurável</h3>
+                    <p style="margin: 0;">
+                        Média de economia: R$ 287/mês<br>
+                        83% dos usuários poupam pela primeira vez<br>
+                        Números reais, não marketing.
+                    </p>
+                </li>
+
+                <li>
+                    <h3 style="margin: 0 0 var(--pz-space-2); color: var(--pz-white);">5. Feito COM Vocês, Não PRA Vocês</h3>
+                    <p style="margin: 0;">
+                        Equipe tem pessoas da periferia.<br>
+                        Conselho consultivo de movimentos sociais.<br>
+                        Co-criação constante com usuários.
+                    </p>
+                </li>
+            </ul>
+        </div>
+
+        <!-- PRA QUEM É ISSO? -->
+        <div class="manifesto-section">
+            <h2>Pra Quem É Isso?</h2>
+
+            <p>→ Pra você que <strong>trabalha, rala, faz bico</strong>, mas nunca sobra.</p>
+
+            <p>→ Pra você que sente aquela <strong>RAIVA</strong> quando a fatura chega.</p>
+
+            <p>→ Pra você que já tentou <strong>planilha, app, caderninho</strong> — e durou 3 dias.</p>
+
+            <p>→ Pra você que <strong>NÃO TEM TEMPO</strong> pra ficar anotando em Excel.</p>
+
+            <p>→ Pra você que <strong>ganha dia 5, dia 15, dia 20</strong> (3 fontes diferentes, um caos só).</p>
+
+            <p style="margin-bottom: 0;">→ Pra você que quer <strong>DIGNIDADE FINANCEIRA</strong>, não "dicas de investimento".</p>
+        </div>
+
+        <!-- NOSSO SONHO -->
+        <div class="manifesto-section">
+            <h2>Nosso Sonho</h2>
+
+            <p>Que <strong>TODA pessoa, independente de renda</strong>, tenha clareza financeira.</p>
+
+            <p>Que ninguém sinta <strong>VERGONHA</strong> por estar no aperto — porque aperto é estrutural, não falha moral.</p>
+
+            <p>Que cada pessoa tenha <strong>PODER</strong> sobre cada centavo que ganha.</p>
+
+            <p style="margin-bottom: 0;">Que educação financeira deixe de ser privilégio e vire <strong>DIREITO</strong>.</p>
+        </div>
+
+        <!-- QUOTE FINAL -->
+        <div class="manifesto-quote">
+            <p>
+                POBREZAP é só o começo.<br>
+                <span style="color: var(--pz-green-400);">Vem com a gente?</span>
+            </p>
+        </div>
+
+        <!-- CTA FINAL -->
+        <div class="manifesto-cta">
+            <span style="font-size: 4rem; display: block; margin-bottom: var(--pz-space-6);">💪</span>
+            <h2 style="margin-bottom: var(--pz-space-6); color: var(--pz-white);">
+                Junte-se ao Movimento
+            </h2>
+            <p style="font-size: var(--pz-text-lg); color: var(--pz-gray-100); margin-bottom: var(--pz-space-8);">
+                Pessoas reais já estão economizando de verdade.<br>
+                Você pode ser a próxima.
+            </p>
+            <a href="https://wa.me/5515997423599?text=Quero%20come%C3%A7ar%20no%20POBREZAP%20-%20R%24%209,99/m%C3%AAs" class="pz-btn-cta-large">
+                💬 Começar Agora - R$ 9,99/mês
+            </a>
+            <p style="font-size: var(--pz-text-sm); color: var(--pz-gray-300); margin-top: var(--pz-space-4);">
+                ✅ Reembolso em até 7 dias • ✅ Cancela quando quiser
+            </p>
+        </div>
+    </main>
+
+    <footer class="pz-footer">
+        <div class="pz-container">
+            <div class="pz-footer-bottom">
+                <p>
+                    © 2025 POBREZAP. Todos os direitos reservados.<br>
+                    CNPJ: 40.884.015/0001-84 • São Paulo, Brasil
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        document.documentElement.setAttribute('data-theme', 'dark');
+    </script>
+</body>
+</html>

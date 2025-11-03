@@ -1,0 +1,43 @@
+<svg width="120" height="120" viewBox="0 0 120 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Círculo de fundo (WhatsApp bubble) -->
+  <circle cx="60" cy="60" r="58" fill="#10b981" opacity="0.1"/>
+  <circle cx="60" cy="60" r="58" stroke="#10b981" stroke-width="2"/>
+
+  <!-- Punho (fist) -->
+  <g id="fist">
+    <!-- Base do pulso -->
+    <path d="M45 75 L45 85 Q45 90 50 90 L70 90 Q75 90 75 85 L75 75"
+          fill="#10b981" stroke="#059669" stroke-width="1.5"/>
+
+    <!-- Polegar -->
+    <path d="M42 65 Q38 62 38 57 Q38 52 42 50 L48 52 L48 68 Z"
+          fill="#10b981" stroke="#059669" stroke-width="1.5"/>
+
+    <!-- Indicador -->
+    <path d="M50 40 Q48 35 50 32 Q52 29 55 30 Q58 31 58 35 L58 52 L50 52 Z"
+          fill="#34d399" stroke="#10b981" stroke-width="1.5"/>
+
+    <!-- Médio -->
+    <path d="M60 35 Q58 30 60 27 Q62 24 65 25 Q68 26 68 30 L68 52 L60 52 Z"
+          fill="#34d399" stroke="#10b981" stroke-width="1.5"/>
+
+    <!-- Anelar -->
+    <path d="M70 38 Q68 33 70 30 Q72 27 75 28 Q78 29 78 33 L78 52 L70 52 Z"
+          fill="#34d399" stroke="#10b981" stroke-width="1.5"/>
+
+    <!-- Mindinho -->
+    <path d="M80 42 Q78 37 80 34 Q82 31 85 32 Q88 33 88 37 L88 52 L80 52 Z"
+          fill="#10b981" stroke="#059669" stroke-width="1.5"/>
+
+    <!-- Palma -->
+    <path d="M48 52 L88 52 L88 70 Q88 75 83 75 L53 75 Q48 75 48 70 Z"
+          fill="#10b981" stroke="#059669" stroke-width="1.5"/>
+
+    <!-- Detalhes/linhas da mão -->
+    <line x1="52" y1="60" x2="84" y2="60" stroke="#059669" stroke-width="1" opacity="0.5"/>
+    <line x1="52" y1="66" x2="84" y2="66" stroke="#059669" stroke-width="1" opacity="0.5"/>
+  </g>
+
+  <!-- Símbolo R$ integrado (discreto) -->
+  <text x="95" y="25" font-family="JetBrains Mono, monospace" font-size="14" font-weight="bold" fill="#10b981">R$</text>
+</svg>

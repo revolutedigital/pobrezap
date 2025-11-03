@@ -1,0 +1,433 @@
+Pobre Zap — Manifesto, Branding e Logo (v1.0)
+
+Resumo em 1 linha: Controle financeiro direto no WhatsApp, com humor responsável e
+
+“carinho   duro”,   para   ajudar   quem   vive   no   limite   a   gastar   melhor   e   juntar   grana   sem
+
+frescura.
+
+1) Manifesto de Marca
+
+Nós   nascemos   para   ser   o  sincerão   do   seu   bolso.   A   gente   sabe   como   é:   boleto,   busão,   aluguel,   o
+
+cafezinho que vira rombo e a sensação de que o mês tem 60 dias. Nada de papo engravatado. Aqui é o
+
+controle financeiro do jeito real, do seu jeito, no WhatsApp, com lembrete na hora certa e humor que
+
+cutuca sem humilhar.
+
+Acreditamos que organização é para todos, especialmente para quem tem pouco — porque cada R$
+
+conta.   A   gente   mostra   onde   o   dinheiro   some,   ensina   atalhos   simples,   e   comemora   cada   vitória:   o
+
+cashback, o desconto, o dígito a mais no final do mês.  Pobre Zap  é coragem para encarar números,
+leveza para não desanimar e foco em resultado prático.
+
+Promessa:  Ser   seu   parceiro   de   bolso,  direto   no   Zap,   para   transformar   pequenas
+
+escolhas em grandes alívios no fim do mês.
+
+Princípios:  -  Clareza   acima   de   tudo.  Sem   jargão;   português   de   rua,   direto   ao   ponto.   -  Humor
+
+responsável. Brinca com a situação, nunca com a pessoa. - Ação imediata. Sempre um próximo passo
+
+simples   e   útil.   -  Acessibilidade   e   respeito.  Inclusivo,   legível,   com   foco   em   realidade   brasileira.   -
+
+Privacidade e segurança. Dados são do usuário; tratamos com seriedade.
+
+2) Posicionamento
+
+• 
+
+Categoria: Finanças pessoais pelo WhatsApp (chat-first).
+
+• 
+
+Público prioritário (ICP): Brasileiros(as) de 18–45 anos, renda até 3 salários mínimos, que usam
+
+WhatsApp diariamente e não se adaptaram a apps financeiros tradicionais.
+
+• 
+
+Insight-chave: As pessoas sabem que precisam controlar, mas faltam tempo, paciência e
+
+motivação. O WhatsApp é onde a vida acontece.
+
+• 
+
+Proposta de valor: “Controle seu dinheiro onde você já conversa. Com lembretes práticos,
+
+metas simples e humor responsável para não desistir.”
+
+• 
+
+Diferenciais:
+
+• 
+
+Zap-first: zero atrito, sem baixar app.
+
+• 
+
+Humor calibrável: modos Sutil, Sincerão e Sincerão Turbo.
+
+• 
+
+Empurrõezinhos úteis: alertas contextuais (“café fora do orçamento”, “PIX suspeito de
+
+impulso”).
+
+• 
+
+Gamificação do básico: micro-metas, selos e “dias de sobrevivência”.
+
+Taglines (opções): - “Pobre Zap. Sincerão com seu bolso.” - “Mais grana, menos drama.” - “Se coube
+
+no Zap, cabe no seu mês.”
+
+1
+
+3) Arquétipo, Voz e Tom
+
+• 
+
+Arquétipo: Prestativo + Bobo da Corte (sábio prático + humor leve).
+
+• 
+• 
+
+Voz: Próxima, direto de WhatsApp. Sem “coachês”.
+Tom: Empático, divertido, nunca depreciativo.
+
+Matriz de Humor (Safe Roast):  -  Pode:  Brincar com situações do dia a dia (“aquele café gourmet te
+
+seduziu?”), exagero cômico sobre escolhas, memes neutros. - Nunca: Ridicularizar pobreza, corpo, raça,
+
+gênero, religião, emprego, escolaridade, região. - Sempre: Trazer uma sugestão prática após a piada.
+
+Níveis   de   “Sincerão”  (configurável   pelo   usuário):   1.  Sutil:  lembretes   gentis;   emojis   moderados.   2.
+
+Sincerão:  cutucadas bem-humoradas + dicas objetivas. 3.  Sincerão Turbo:  humor mais direto + ação
+
+imediata (ex.: “quer ativar trava de gastos hoje?”).
+
+4) Mensagens-chave (Pilares)
+
+1. 
+
+Controle simples no Zap. Você só conversa e resolve.
+
+2. 
+
+Humor que ajuda. Leve para não desistir; sério quando precisa.
+
+3. 
+
+Vitórias pequenas contam. Um desconto hoje vira fôlego amanhã.
+
+4. 
+
+Privacidade e respeito. Seus dados, suas regras.
+
+Provas/Features que sustentam: - Registro rápido de gasto (voz, texto ou foto do recibo). - Alertas de
+
+orçamento por categoria. - Metas (ex.: “Reserva de Emergência R$ 500”). - Relatório semanal “Papo Reto
+
+do Bolso”. - “Modo Feira”: lista de compras com tetos por item. - “Modo Transporte”: simula custo
+
+mensal do vai‑e‑volta.
+
+5) Experiência no WhatsApp (Produto)
+
+Onboarding (D0):  1. Saudação + explicar “modo sincerão”. 2. Pergunta do objetivo:  sair do vermelho /
+
+juntar 500 / quitar dívida X. 3. Definição de 3 categorias principais (alimentação, transporte, contas). 4.
+
+Escolha do dia de relatório + limite de alertas/dia.
+
+Comandos (atalhos): -  + 18,90 padoca  — registra gasto rápido. -  saldo  — como está o mês por
+categoria. -  meta  — define/edita metas. -  trava  — bloqueio suave: alerta antes de compras fora do
+planejado. -  feira  — modo lista com teto. -  relatório  — resumo semanal ou mensal.
+
+Exemplo de Conversa:
+
+Pobre Zap: Bom dia! Hoje é dia de foco. Quer ativar o Sincerão?
+
+Você: manda.
+
+Pobre   Zap:  Aquele  delivery   de   ontem  foi   gostoso,   mas   furou   R$   27   do   seu   teto   de
+
+alimentação. Bora compensar com marmita hoje? Quer uma receita baratinha?
+
+Você: manda a receita.
+
+Pobre Zap: Receita enviada. E se quiser, habilito trava de impulso por 48h: te aviso antes
+
+de compra fora do plano. Ativo?
+
+Você: ativa.
+
+2
+
+6) Identidade Verbal
+
+• 
+
+Linguagem: coloquial respeitosa, frases curtas, verbos de ação.
+
+• 
+• 
+
+Expressões-chave: “papo reto”, “ataque ao bolso”, “economia ninja”, “bolso agradece”.
+CTA’s preferidos: “Bora ajustar agora?”, “Ativar trava?”, “Definir meta de hoje?”.
+
+Do/Don’t (exemplos):  -  Do:  “Seu teto de mercado estourou R$ 12. Quer mover dos restaurantes ou
+
+travar doces por 7 dias?” - Don’t: “Você é irresponsável com dinheiro.”
+
+7) Naming & Sensibilidade
+
+Nome do projeto: Pobre Zap (forte, memorável, com humor ácido).
+
+Risco: pode soar pejorativo em alguns contextos.
+
+Mitigação (duas vias): - Modo público: comunicação externa usa Pobre Zap com declaração clara de
+
+respeito (“humor que ajuda, nunca humilha”). - Alternativas brand-safe (para parcerias/B2B): Zap do
+
+Bolso, GranaZap, Bolso Sincerão.
+
+Recomendação:   manter  Pobre   Zap  como  marca-mãe   provocativa,   com  submarca
+
+“Bolso Sincerão” para frentes mais sensíveis (ONGs, bancos comunitários, mídia ampla).
+
+8) Identidade Visual
+
+8.1 Paleta
+
+• 
+
+• 
+
+• 
+
+• 
+
+• 
+
+Verde Real #15B981  (confiança/economia)
+Grafite #0F172A  (base, contraste alto)
+Areia #F3F4F6  (fundos claros legíveis)
+Amarelo Atenção #F59E0B  (alertas/amigável)
+Vermelho Calmo #EF4444  (exceções/erros)
+
+Acessibilidade: combinações Grafite x Areia e Grafite x Verde passam WCAG AA para UI.
+
+8.2 Tipografia
+
+• 
+
+Display/Logo: Poppins (sem serifa, arredondada, amigável).
+
+• 
+
+UI/Textos: Inter (legibilidade no mobile, WhatsApp‑like).
+
+8.3 Ícones & Ilustrações
+
+• 
+
+Estilo flat com cantos arredondados, traço grosso, pictogramas simples: carteira, recibo,
+
+porquinho remendado, chat‑bubble, raio (ação).
+
+3
+
+9) Logo — 3 Rotas Criativas
+
+Rota A — “Chat Wallet” (segura e direta)  - Ícone:  balão de chat  +  carteira  minimal formando um
+
+monograma PZ negativo. - Significado: conversa + dinheiro sob controle. - Uso: excelente para favicon/
+app e bot-avatar.
+
+Rota B — “Z de Recibo” (conceitual e tech) - Ícone: duas fitas de recibo cruzadas formando um Z. -
+
+Detalhe:   canto   serrilhado   típico   de   cupom   fiscal;   ponto   em   amarelo   como   alerta.   -   Uso:   comunica
+
+orçamento, alertas e ação.
+
+Rota   C   —   “Porquinho   Remendado”   (provocativa   e   memorável)  -   Ícone:  cofrinho  com  remendo
+
+(esparadrapo) e balão de chat sutil no corpo. - Significado: pouco recurso, muita criatividade; conversa
+
+que salva.
+
+Construção & Guias (para todas): - Zona de proteção: 0,5× da altura do ícone. - Mínimo de uso: 16 px
+
+para ícone; 120 px para lockup horizontal. -  Versões:  colorida, preto, branco, 1 cor. -  Avatar do bot:
+
+ícone puro com fundo Verde Real.
+
+Sugestão de Lockups:  -  Horizontal:  Ícone + “Pobre Zap” (peso 700) + subtítulo “sincerão do bolso”. -
+
+Empilhado: Ícone acima; abaixo “Pobre Zap”.
+
+Motion (micro‑animação): - Recibo dobra e vira “Z”; cofrinho recebe “remendo” com pop; balão de chat
+
+pulsa 1x no onboarding.
+
+10) Key Visuals (KVs)
+
+• 
+
+KV 1: mão segurando recibos que formam um “Z”, com headline: “Mais grana, menos drama.”
+
+• 
+
+KV 2: avatar do cofrinho remendado falando em balão de chat: “Papo reto do bolso.”
+
+• 
+
+KV 3: carteira minimal com selo “Trava de Impulso ON”.
+
+11) Conteúdo & Campanhas
+
+Linhas editoriais:  1.  Papo Reto:  cortes curtos com 1 dica prática (ex.: “3 trocas que salvam R$ 50/
+
+semana”). 2.  Diário do Bolso:  histórias reais (anonimizadas) com antes/depois. 3.  Missões de 7 dias:
+
+“Operação Café em Casa”, “Semana Sem Delivery”. 4. Mitos & Verdades: juros, parcelamento, 2ª via de
+
+boleto, etc.
+
+Exemplos de Copy (ads): - Hook: “Seu bolso merece 2 minutos de sinceridade.”
+
+Corpo: “Ative a trava de impulso no WhatsApp. Sem app, sem crise. Só papo reto.” - Hook: “Se coube no
+
+Zap, cabe no mês.”
+
+Corpo: “Registre gastos com voz, receba alertas e junte um troco no final.”
+
+Lançamento (Sprint 14 dias):  -  D‑14 a D‑7:  lista de espera, memes brand-safe, enquete de “modo
+
+sincerão”. - D‑6 a D‑1: beta fechado (100 usuários), coleta de depoimentos. - D‑0: live curta “papo reto
+
+do bolso” + KVs; CTA para ativar no WhatsApp. - D+1 a D+7: missões gamificadas; ranking anônimo por
+
+economia percentual.
+
+4
+
+12) Produto: Roadmap
+
+• 
+
+MVP (Zap): registro manual/voz/foto; categorias; metas; relatórios; modos de humor; travas de
+
+impulso; feira/lista.
+Mês 2–3: integração básica Open Finance (opt‑in), import de extrato; categorização semântica.
+
+• 
+
+• 
+
+Mês 4–6: metas automáticas, metas compartilhadas (família), cashback parceiro.
+
+Métrica North Star: % de usuários que batem meta mensal (ou reduzem 10% despesas variáveis em
+
+60 dias).
+
+13) Ética, LGPD & Segurança
+
+• 
+
+Consentimento explícito (opt‑in WhatsApp).
+
+• 
+
+Transparência sobre armazenamento (criptografia em repouso), finalidade, e revogação.
+
+• 
+
+Dados mínimos: capturar só o necessário para a função.
+
+• 
+
+Botões de segurança: “Pausar Humor” / “Modo Silencioso 24h”.
+
+14) Brand Kit Resumido
+
+• 
+
+Paleta: #15B981 (primária), #0F172A, #F3F4F6, #F59E0B, #EF4444.
+
+• 
+
+Fontes: Poppins (títulos/logo), Inter (texto/UI).
+
+• 
+
+Ícone recomendado: Rota B – Z de Recibo (versátil e único).
+
+• 
+
+Tagline: “Sincerão com seu bolso.”
+
+• 
+
+Avatar do Bot: ícone sobre fundo #15B981.
+
+15) Próximos Passos
+
+1. 
+2. 
+
+Escolher a Rota de Logo (A, B ou C) e ajustar nuances.
+Definir o nível padrão do Sincerão (sugestão: Nível 2).
+
+3. 
+
+Montar KV principal (feed + stories + header WhatsApp Business).
+
+4. 
+
+Roteiro do Onboarding (fluxo completo + mensagens).
+
+5. 
+
+Prototipar 3 telas de conversa (avatar, cards, botões rápidos).
+
+16) Apêndice — Exemplos de Mensagens (PT‑BR)
+
+Alerta de Estouro:
+
+Eita!  Mercado  passou   R$   18   do   teto.  Plano   relâmpago:  tirar   1   delivery   esta   semana
+
+resolve. Ativo trava?
+
+Relatório Semanal:
+
+Papo Reto do Bolso
+
+Você gastou R$ 312 em transporte (‑R$ 27 vs. semana passada).
+
+5
+
+Vitória da semana: 3 dias sem delivery.
+
+Próximo passo: mover R$ 20 de “lazer” pra “contas fixas” até sexta.
+
+Missão 7 dias:
+
+Operação Café em Casa ☕️
+Economize R$ 42 nesta semana. Quer uma receita rápida e gostosa? Sim/Não
+
+Observação de sensibilidade
+
+Usar o nome Pobre Zap com clareza de propósito (humor que empodera). Em canais sensíveis (mídia,
+
+ONGs, B2B), prefira o guarda‑chuva Pobre Zap e comunicação de produto como “Bolso Sincerão”.
+
+6
+
+

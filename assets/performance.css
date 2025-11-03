@@ -1,0 +1,44 @@
+/* ==========================================================================
+   PERFORMANCE OPTIMIZATIONS
+   Critical CSS for above-the-fold rendering
+   ========================================================================== */
+
+/* GPU Acceleration */
+.gpu-accelerated {
+  transform: translateZ(0);
+  backface-visibility: hidden;
+  will-change: transform;
+}
+
+/* Efficient Animations */
+@keyframes skeleton-loading {
+  0% { background-position: 200% 0; }
+  100% { background-position: -200% 0; }
+}
+
+/* Content Visibility */
+.content-visibility-auto {
+  content-visibility: auto;
+  contain-intrinsic-size: 500px;
+}
+
+/* Efficient Repaints */
+.contain-paint {
+  contain: layout style paint;
+}
+
+/* Touch Target Optimization (44x44px minimum) */
+.touch-target {
+  min-height: 44px;
+  min-width: 44px;
+}
+
+/* Keyboard Navigation Indicator */
+body.keyboard-navigation *:focus {
+  outline: 3px solid var(--color-border-focus);
+  outline-offset: 2px;
+}
+
+body:not(.keyboard-navigation) *:focus {
+  outline: none;
+}
